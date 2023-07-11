@@ -61,3 +61,10 @@ def generate_fruit(snake_body):
         fruit_type = 'NORMAL'
     return Fruit(position, fruit_type)  # Return a Fruit object
 
+def animate_score_increase(score_increase, x, y):
+    for size in range(20, 40, 2):  # This will create a zoom-in effect
+        font = pygame.font.Font(None, size)
+        text = font.render(f'+{score_increase}', True, WHITE)
+        WINDOW.blit(text, (x, y))
+        pygame.display.update()
+        pygame.time.wait(50)  # Wait a little bit before drawing the next frame

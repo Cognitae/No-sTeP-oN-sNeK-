@@ -51,8 +51,14 @@ def game_loop():
     WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption('No Step on SNEK!!!') 
     FONT = pygame.font.Font(None, FONT_SIZE)
-    line1 = FONT.render('No sTeP oN Sn3k!!!!!!', True, WHITE)
+    line1_font = pygame.font.Font(None, FONT_SIZE * 3) # Create a new font object with a larger font size for line1
+    line1 = line1_font.render('No sTeP oN Sn3k!!!!!!', True, GREEN) # Use the new font object to render line1
     line2 = FONT.render('Press SPACEBAR to start!', True, WHITE) 
+    line3 = FONT.render('Press Q to quit!', True, WHITE)
+    
+    # Load Title image
+    image = pygame.image.load('Resources/Snek_Marine.jpg')
+    image = pygame.transform.scale(image, (200, 200)) # replace with your desired size
 
     # Initialize the game state
     snake = Snake([[300, 150], [90, 50], [80, 50]])
@@ -65,23 +71,31 @@ def game_loop():
 
     clock = pygame.time.Clock()
     game_started = False
+    game_paused = False
+    game_over = False
     play_again = False  # Add this line
 
     while True:
         for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                return
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
-                    if game_started:
-                        game_started = False  # If game is running, pause it
+                    print("Spacebar pressed")
+                    if not game_started and not game_over and not play_again:
+                        game_started = True
+                        print("Game started")
+                    elif game_started and not game_paused:
+                        game_paused = True
+                        print("Game paused")
+                    elif game_paused:
+                        game_paused = False
+                        print("Game resumed")
                     elif play_again:
-                        return True  # If game is over, start a new game
-                    else:
-                        game_started = True  # If game is paused, resume it
+                        game_started = True
+                        game_over = False
+                        play_again = False
+                        print("Game restarted")
                 if event.key == pygame.K_q:
-                    return False  # If 'q' is pressed, quit the game
+                    return False
 
         keys = pygame.key.get_pressed()
         new_direction = direction
@@ -96,7 +110,7 @@ def game_loop():
 
         direction = new_direction
 
-        if game_started:
+        if game_started and not game_paused:
             # Move the snake according to the direction
             snake.move(direction)
 
@@ -119,11 +133,11 @@ def game_loop():
                 
             # Check for game over
             if snake.check_game_over():
+                game_over = True
                 play_again = game_over_screen(score)
                 if not play_again:
                     return  
                 else:
-                    game_started = False
                     snake = Snake([[300, 150], [90, 50], [80, 50]])  
                     direction = 'RIGHT'
                     fruit = generate_fruit(snake.body)  # This is now a Fruit object
@@ -139,10 +153,18 @@ def game_loop():
             # Display the score
             score_text = FONT.render(f'Score: {score}', True, WHITE)
             WINDOW.blit(score_text, (10, 10))  # Display the score at the top left corner
+        elif game_paused:
+            # You can add a "game paused" screen here if you want
+            pass
+        
         else:
             WINDOW.fill(BLACK)
-            WINDOW.blit(line1, (WIDTH // 2 - line1.get_width() // 2, HEIGHT // 2 - FONT_SIZE))
-            WINDOW.blit(line2, (WIDTH // 2 - line2.get_width() // 2, HEIGHT // 2))
+            WINDOW.blit(line1, (WIDTH // 2 - line1.get_width() // 2, HEIGHT // 4.5 - FONT_SIZE))
+            # Blit the image in the middle of line1 and line2
+            WINDOW.blit(image, (WIDTH // 2 - image.get_width() // 2, HEIGHT // 2 - image.get_height() // 2))
+            WINDOW.blit(line2, (WIDTH // 2 - line2.get_width() // 2, HEIGHT // 1.25))
+            WINDOW.blit(line3, (WIDTH // 2 - line3.get_width() // 2, HEIGHT // 1.25 + FONT_SIZE))
+
             
         pygame.display.update()
         clock.tick(game_speed)  # Use the variable game speed here
@@ -154,3 +176,4 @@ if __name__ == "__main__":
         if not play_again:
             pygame.quit() 
             break
+
