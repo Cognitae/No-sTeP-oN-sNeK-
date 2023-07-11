@@ -70,14 +70,14 @@ def game_loop():
     global game_speed  # Initialize game speed
     game_speed = SNAKE_SPEED  # Reset game speed
 
+    # Initialize the fruit tally
+    fruit_tally = {'NORMAL': 0, 'SPECIAL': 0, 'GOLDEN': 0}
+
     clock = pygame.time.Clock()
     game_started = False
     game_paused = False
     game_over = False
     play_again = False  # Add this line
-    
-    # Initialize the fruit tally
-    fruit_tally = {'NORMAL': 0, 'SPECIAL': 0, 'GOLDEN': 0}
     
     # Initialize a list to hold active animations
     animations = []
@@ -149,9 +149,10 @@ def game_loop():
                 # If the snake didn't eat the fruit, move as normal by removing the last segment
                 snake.remove_last_segment()
                 
-            # Check for game over
             if snake.check_game_over():
                 game_over = True
+                # Reset the fruit tally
+                fruit_tally = {'NORMAL': 0, 'SPECIAL': 0, 'GOLDEN': 0}
                 play_again = game_over_screen(score)
                 if not play_again:
                     return  
