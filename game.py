@@ -3,6 +3,7 @@ from utils import *
 from constants import *
 from snake import Snake
 from fruit import Fruit
+from animations import Animation
 from pygame import font, display
 
 FONT = font.Font(None, FONT_SIZE)
@@ -74,6 +75,12 @@ def game_loop():
     game_paused = False
     game_over = False
     play_again = False  # Add this line
+    
+    # Initialize the fruit tally
+    fruit_tally = {'NORMAL': 0, 'SPECIAL': 0, 'GOLDEN': 0}
+    
+    # Initialize a list to hold active animations
+    animations = []
 
     while True:
         for event in pygame.event.get():
@@ -116,12 +123,23 @@ def game_loop():
 
             if snake.check_collision(fruit):
                 # Increase the score
+                score_increase = 0
+                color = None
                 if fruit.type == 'GOLDEN':
-                    score += 100
+                    score_increase = 100
+                    color = GOLD
                 elif fruit.type == 'SPECIAL':
-                    score += 5
+                    score_increase = 5
+                    color = BLUE
                 else:  # 'NORMAL'
-                    score += 1
+                    score_increase = 1
+                    color = RED
+
+                score += score_increase
+                fruit_tally[fruit.type] += 1
+
+                # Add animation
+                animations.append(Animation(f'+{score_increase}', fruit.position.copy(), color))
                 # Generate new fruit and don't remove the tail of the snake, so it grows
                 fruit = generate_fruit(snake.body)  # This is now a Fruit object
                 
@@ -149,6 +167,29 @@ def game_loop():
             WINDOW.fill(GRAY)
             draw_snake(WINDOW, snake)
             draw_fruit(WINDOW, fruit)
+            
+            # Draw animations
+            for anim in animations:
+                if not anim.draw(WINDOW):
+                    animations.remove(anim)
+                    
+            # Display the fruit tally
+            red_text = FONT.render(f'{fruit_tally["NORMAL"]}', True, WHITE)
+            pygame.draw.rect(WINDOW, RED, pygame.Rect(WIDTH - 150, 10, 20, 20))  # Draw a red square
+            WINDOW.blit(red_text, (WIDTH - 125, 10))  # Display the red fruit tally
+
+            blue_text = FONT.render(f'{fruit_tally["SPECIAL"]}', True, WHITE)
+            pygame.draw.rect(WINDOW, BLUE, pygame.Rect(WIDTH - 100, 10, 20, 20))  # Draw a blue square
+            WINDOW.blit(blue_text, (WIDTH - 75, 10))  # Display the blue fruit tally
+
+            gold_text = FONT.render(f'{fruit_tally["GOLDEN"]}', True, WHITE)
+            pygame.draw.rect(WINDOW, GOLD, pygame.Rect(WIDTH - 50, 10, 20, 20))  # Draw a golden square
+            WINDOW.blit(gold_text, (WIDTH - 25, 10))  # Display the gold fruit tally
+
+
+            # Draw a border below the score and fruit tally
+            pygame.draw.line(WINDOW, WHITE, (0, FONT_SIZE + 20), (WIDTH, FONT_SIZE + 20), 2)
+
 
             # Display the score
             score_text = FONT.render(f'Score: {score}', True, WHITE)
@@ -176,4 +217,3 @@ if __name__ == "__main__":
         if not play_again:
             pygame.quit() 
             break
-

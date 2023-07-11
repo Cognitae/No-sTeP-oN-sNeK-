@@ -49,17 +49,12 @@ def check_game_over(snake):
     return False
 
 def generate_fruit(snake_body):
-    all_positions = [[x, y] for x in range(0, WIDTH, SNAKE_SIZE) for y in range(0, HEIGHT, SNAKE_SIZE)]
-    free_positions = [pos for pos in all_positions if pos not in snake_body]
-    position = random.choice(free_positions)
-    random_number = random.random()  # Generate a random number between 0 and 1
-    if random_number < 0.01:  # 1% chance the fruit is golden
-        fruit_type = 'GOLDEN'
-    elif random_number < 0.11:  # 10% chance the fruit is special (but not golden)
-        fruit_type = 'SPECIAL'
-    else:  # 89% chance the fruit is normal
-        fruit_type = 'NORMAL'
-    return Fruit(position, fruit_type)  # Return a Fruit object
+    while True:
+        position = [random.randrange(0, WIDTH, SNAKE_SIZE), random.randrange(FONT_SIZE + 20, HEIGHT, SNAKE_SIZE)]
+        if position not in snake_body:
+            break
+    return Fruit(position, random.choices(['NORMAL', 'SPECIAL', 'GOLDEN'], [0.89, 0.11, 0.01])[0])
+
 
 def animate_score_increase(score_increase, x, y):
     for size in range(20, 40, 2):  # This will create a zoom-in effect

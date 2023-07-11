@@ -1,5 +1,5 @@
 import pygame
-from constants import SNAKE_SIZE, GREEN, WIDTH, HEIGHT
+from constants import SNAKE_SIZE, GREEN, WIDTH, HEIGHT, FONT_SIZE, WINDOW
 
 class Snake:
     def __init__(self, initial_position):
@@ -28,12 +28,11 @@ class Snake:
         self.body.pop()
 
     def check_game_over(self):
-        # Check if snake is out of bounds
-        if (self.body[0][0] >= WIDTH or 
-            self.body[0][0] < 0 or 
-            self.body[0][1] >= HEIGHT or 
-            self.body[0][1] < 0):
-            return True
+        return (self.body[0] in self.body[1:] or
+            self.body[0][0] < 0 or
+            self.body[0][0] >= WIDTH or
+            self.body[0][1] < FONT_SIZE + 20 or  # Add this condition
+            self.body[0][1] >= HEIGHT)
         # Check if snake has collided with itself
         if self.body[0] in self.body[1:]:
             return True
