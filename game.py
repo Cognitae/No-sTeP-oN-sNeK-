@@ -20,7 +20,7 @@ def game_over_screen(score):
 
     WINDOW.fill(GRAY)
 
-    lines = [f'GAME OVER', f'Score: {score}', f'High Score: {high_score}', 'Press SPACEBAR Three Times to play again or Q to quit']
+    lines = [f'GAME OVER', f'Score: {score}', f'High Score: {high_score}', f'Be A Winner! Press SPACEBAR to play again', 'Sore Petty Loser. Press Q to quit']
     
     if new_high_score:
         lines.insert(1, "New High Score! Congratulations!")
