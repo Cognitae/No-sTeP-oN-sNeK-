@@ -7,7 +7,7 @@ pygame.init()
 SNAKE_SIZE = 10
 SNAKE_SPEED = 15
 WIDTH = 600  # width of the game window
-HEIGHT = 400  # height of the game window
+HEIGHT = 420  # height of the game window
 WIDTH = WIDTH // SNAKE_SIZE * SNAKE_SIZE  # This ensures that WIDTH is a multiple of SNAKE_SIZE
 HEIGHT = HEIGHT // SNAKE_SIZE * SNAKE_SIZE  # This ensures that HEIGHT is a multiple of SNAKE_SIZE
 FONT_SIZE = 18

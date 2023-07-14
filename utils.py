@@ -50,8 +50,8 @@ def check_game_over(snake):
 
 def generate_fruit(snake_body):
     while True:
-        position = [random.randrange(0, WIDTH, SNAKE_SIZE), random.randrange(FONT_SIZE + 20, HEIGHT, SNAKE_SIZE)]
-        if position not in snake_body:
+        position = [random.randrange(0, WIDTH - SNAKE_SIZE, SNAKE_SIZE), random.randrange(FONT_SIZE + 20, HEIGHT - (FONT_SIZE + 20 + SNAKE_SIZE), SNAKE_SIZE)]
+        if tuple(position) not in map(tuple, snake_body):
             break
     return Fruit(position, random.choices(['NORMAL', 'SPECIAL', 'GOLDEN'], [0.89, 0.11, 0.01])[0])
 
