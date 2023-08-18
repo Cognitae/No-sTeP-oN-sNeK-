@@ -11,24 +11,40 @@ WINDOW = display.set_mode((WIDTH, HEIGHT))
 
 high_score = 0  # Initialize high_score
 
-def game_over_screen(score):
+def game_over_screen(score, fruit_tally):
     global high_score
     new_high_score = False
     if score > high_score:
         high_score = score
         new_high_score = True
 
+    # Calculate the grind score and luck factor
+    total_fruits = sum(fruit_tally.values())
+    grind_score = score / total_fruits if total_fruits > 0 else 0
+    luck_factor = ((fruit_tally['SPECIAL'] + fruit_tally['GOLDEN'] * 10) / total_fruits) * 100 if total_fruits > 0 else 0
+    true_score = high_score // grind_score
+
     WINDOW.fill(GRAY)
 
-    lines = [f'GAME OVER', f'Score: {score}', f'High Score: {high_score}', f'Be A Winner! Press SPACEBAR to play again', 'Sore Petty Loser. Press Q to quit']
+    lines = [f'GAME OVER', f'Score: {score}', f'High Score: {high_score}', f'True Score: {true_score}', f'Luck Factor: {luck_factor:.2f}%', f'Press SPACEBAR to play again', 'Press Q to quit']
     
     if new_high_score:
         lines.insert(1, "New High Score! Congratulations!")
     
     for i, line in enumerate(lines):
         text = FONT.render(line, True, WHITE)
-        text_rect = text.get_rect(center=(WIDTH // 2, HEIGHT // 2 + i * FONT_SIZE))
+        text_rect = text.get_rect(center=(WIDTH // 2, (HEIGHT // 2 - len(lines) // 2 * FONT_SIZE) + i * FONT_SIZE))
         WINDOW.blit(text, text_rect)
+
+    # Draw the fruit tally
+    pygame.draw.rect(WINDOW, RED, pygame.Rect(WIDTH // 2 - 70, HEIGHT // 2 + len(lines) * FONT_SIZE, 20, 20))  # Draw a red square
+    WINDOW.blit(FONT.render(f'{fruit_tally["NORMAL"]}', True, WHITE), (WIDTH // 2 - 45, HEIGHT // 2 + len(lines) * FONT_SIZE))  # Display the red fruit tally
+
+    pygame.draw.rect(WINDOW, BLUE, pygame.Rect(WIDTH // 2 - 20, HEIGHT // 2 + len(lines) * FONT_SIZE, 20, 20))  # Draw a blue square
+    WINDOW.blit(FONT.render(f'{fruit_tally["SPECIAL"]}', True, WHITE), (WIDTH // 2 + 5, HEIGHT // 2 + len(lines) * FONT_SIZE))  # Display the blue fruit tally
+
+    pygame.draw.rect(WINDOW, GOLD, pygame.Rect(WIDTH // 2 + 30, HEIGHT // 2 + len(lines) * FONT_SIZE, 20, 20))  # Draw a golden square
+    WINDOW.blit(FONT.render(f'{fruit_tally["GOLDEN"]}', True, WHITE), (WIDTH // 2 + 55, HEIGHT // 2 + len(lines) * FONT_SIZE))  # Display the gold fruit tally
 
     pygame.display.update()
 
@@ -58,8 +74,8 @@ def game_loop():
     line3 = FONT.render('Press Q to quit!', True, WHITE)
     
     # Load Title image
-    #image = pygame.image.load('Resources/Snek_Marine.jpg')
-    #image = pygame.transform.scale(image, (200, 200)) # replace with your desired size
+    image = pygame.image.load('Resources/Snek_Marine.jpg')
+    image = pygame.transform.scale(image, (200, 200)) # replace with your desired size
 
     # Initialize the game state
     snake = Snake([[300, 150], [90, 50], [80, 50]])
@@ -151,9 +167,7 @@ def game_loop():
                 
             if snake.check_game_over():
                 game_over = True
-                # Reset the fruit tally
-                fruit_tally = {'NORMAL': 0, 'SPECIAL': 0, 'GOLDEN': 0}
-                play_again = game_over_screen(score)
+                play_again = game_over_screen(score, fruit_tally)  # Pass fruit_tally to game_over_screen
                 if not play_again:
                     return  
                 else:
@@ -161,6 +175,7 @@ def game_loop():
                     direction = 'RIGHT'
                     fruit = generate_fruit(snake.body)  # This is now a Fruit object
                     score = 0
+                    fruit_tally = {'NORMAL': 0, 'SPECIAL': 0, 'GOLDEN': 0}  # Reset fruit tally here
             else:
                 play_again = False
 
@@ -201,16 +216,15 @@ def game_loop():
         
         else:
             WINDOW.fill(BLACK)
-            WINDOW.blit(line1, (WIDTH // 2 - line1.get_width() // 2, HEIGHT // 4.5 - FONT_SIZE))
+            WINDOW.blit(line1, (WIDTH // 2 - line1.get_width() // 2, HEIGHT // 6.00 - FONT_SIZE))
             # Blit the image in the middle of line1 and line2
-            #WINDOW.blit(image, (WIDTH // 2 - image.get_width() // 2, HEIGHT // 2 - image.get_height() // 2))
+            WINDOW.blit(image, (WIDTH // 2 - image.get_width() // 2, HEIGHT // 2 - image.get_height() // 2))
             WINDOW.blit(line2, (WIDTH // 2 - line2.get_width() // 2, HEIGHT // 1.25))
             WINDOW.blit(line3, (WIDTH // 2 - line3.get_width() // 2, HEIGHT // 1.25 + FONT_SIZE))
 
             
         pygame.display.update()
         clock.tick(game_speed)  # Use the variable game speed here
-
 
 if __name__ == "__main__":
     while True:  
