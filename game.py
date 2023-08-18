@@ -1,4 +1,5 @@
 import pygame
+import os
 from utils import *
 from constants import *
 from snake import Snake
@@ -19,8 +20,8 @@ def game_over_screen(score, fruit_tally):
         new_high_score = True
 
     # Calculate the grind score and luck factor
-    total_fruits = sum(fruit_tally.values())
-    grind_score = score / total_fruits if total_fruits > 0 else 0
+    total_fruits = sum(fruit_tally.values())  
+    grind_score = score / total_fruits if total_fruits > 0 else 1
     luck_factor = ((fruit_tally['SPECIAL'] + fruit_tally['GOLDEN'] * 10) / total_fruits) * 100 if total_fruits > 0 else 0
     true_score = high_score // grind_score
 
@@ -74,8 +75,10 @@ def game_loop():
     line3 = FONT.render('Press Q to quit!', True, WHITE)
     
     # Load Title image
-    image = pygame.image.load('Resources/Snek_Marine.jpg')
-    image = pygame.transform.scale(image, (200, 200)) # replace with your desired size
+    script_dir = os.path.dirname(os.path.abspath(__file__)) # Absolute directory the script is in
+    image_path = os.path.join(script_dir, 'Resources', 'Snek_Marine.jpg')
+    image = pygame.image.load(image_path)
+    image = pygame.transform.scale(image, (200, 200)) # Replace with your desired size
 
     # Initialize the game state
     snake = Snake([[300, 150], [90, 50], [80, 50]])
