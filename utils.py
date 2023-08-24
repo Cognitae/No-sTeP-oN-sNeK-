@@ -50,9 +50,23 @@ def check_game_over(snake):
 
 def generate_fruit(snake_body):
     while True:
-        position = [random.randrange(0, WIDTH, SNAKE_SIZE), random.randrange(FONT_SIZE + 20, HEIGHT, SNAKE_SIZE)]
-        if position not in snake_body:
+        x_pos = random.randrange(0, WIDTH - SNAKE_SIZE, SNAKE_SIZE)
+        y_pos = random.randrange(FONT_SIZE + 20, HEIGHT - SNAKE_SIZE, SNAKE_SIZE)
+        position = [x_pos, y_pos]
+
+        fruit_rect = pygame.Rect(x_pos, y_pos, SNAKE_SIZE, SNAKE_SIZE)
+        
+        # Check if the fruit's area collides with any part of the snake's body
+        collision = False
+        for segment in snake_body:
+            segment_rect = pygame.Rect(segment[0], segment[1], SNAKE_SIZE, SNAKE_SIZE)
+            if fruit_rect.colliderect(segment_rect):
+                collision = True
+                break
+        
+        if not collision:
             break
+
     return Fruit(position, random.choices(['NORMAL', 'SPECIAL', 'GOLDEN'], [0.89, 0.11, 0.01])[0])
 
 

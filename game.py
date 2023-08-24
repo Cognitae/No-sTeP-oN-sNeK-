@@ -178,6 +178,7 @@ def game_loop():
                     direction = 'RIGHT'
                     fruit = generate_fruit(snake.body)  # This is now a Fruit object
                     score = 0
+                    game_speed = SNAKE_SPEED
                     fruit_tally = {'NORMAL': 0, 'SPECIAL': 0, 'GOLDEN': 0}  # Reset fruit tally here
             else:
                 play_again = False
