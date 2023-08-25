@@ -27,7 +27,7 @@ def game_over_screen(score, fruit_tally):
 
     WINDOW.fill(GRAY)
 
-    lines = [f'GAME OVER', f'Score: {score}', f'High Score: {high_score}', f'True Score: {true_score}', f'Luck Factor: {luck_factor:.2f}%', f'Press SPACEBAR to play again', 'Press Q to quit']
+    lines = [f'GAME OVER', f'Score: {score}', f'High Score: {high_score}', f'True Score: {int(true_score)}', f'Luck Factor: {luck_factor:.2f}%', f'Press SPACEBAR to play again', 'Press Q to quit']
     
     if new_high_score:
         lines.insert(1, "New High Score! Congratulations!")
