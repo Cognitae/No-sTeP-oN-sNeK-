@@ -12,7 +12,7 @@ WINDOW = display.set_mode((WIDTH, HEIGHT))
 
 high_score = 0  # Initialize high_score
 
-def game_over_screen(score, fruit_tally):
+def game_over_screen(score, fruit_tally, true_score, special_spawn_count, golden_spawn_count):
     global high_score
     new_high_score = False
     if score > high_score:
@@ -20,10 +20,9 @@ def game_over_screen(score, fruit_tally):
         new_high_score = True
 
     # Calculate the grind score and luck factor
-    total_fruits = sum(fruit_tally.values())  
-    grind_score = score / total_fruits if total_fruits > 0 else 1
-    luck_factor = ((fruit_tally['SPECIAL'] + fruit_tally['GOLDEN'] * 10) / total_fruits) * 100 if total_fruits > 0 else 0
-    true_score = high_score // grind_score
+    total_fruits = sum(fruit_tally.values())
+    total_special_golden_spawns = special_spawn_count + golden_spawn_count
+    luck_factor = ((special_spawn_count + golden_spawn_count * 10) / total_fruits) * 100 if total_fruits > 0 else 0
 
     WINDOW.fill(GRAY)
 
@@ -86,10 +85,18 @@ def game_loop():
     fruit = generate_fruit(snake.body)  # This is now a Fruit object
     additional_fruit = None
 
+    special_spawn_count = 0
+    golden_spawn_count = 0
+
     if fruit.type in ['GOLDEN', 'SPECIAL']:
         additional_fruit = generate_additional_red_fruit(snake.body, fruit.position)
+        if fruit.type == 'SPECIAL':
+            special_spawn_count += 1
+        elif fruit.type == 'GOLDEN':
+            golden_spawn_count += 1
 
     score = 0  # Initialize score
+    true_score = 0  # Initialize true score
     global game_speed  # Initialize game speed
     game_speed = SNAKE_SPEED  # Reset game speed
 
@@ -151,12 +158,15 @@ def game_loop():
                 if fruit.type == 'GOLDEN':
                     score_increase = 100
                     color = GOLD
+                    true_score += 1  # Increase true score for golden fruit
                 elif fruit.type == 'SPECIAL':
                     score_increase = 5
                     color = BLUE
+                    true_score += 1  # Increase true score for special fruit
                 else:  # 'NORMAL'
                     score_increase = 1
                     color = RED
+                    true_score += 1  # Increase true score for normal fruit
 
                 score += score_increase
                 fruit_tally[fruit.type] += 1
@@ -169,6 +179,10 @@ def game_loop():
                 if fruit.type in ['GOLDEN', 'SPECIAL']:
                     print("Special or golden fruit eaten. Generating additional red fruit.")
                     additional_fruit = generate_additional_red_fruit(snake.body, fruit.position)
+                    if fruit.type == 'SPECIAL':
+                        special_spawn_count += 1
+                    elif fruit.type == 'GOLDEN':
+                        golden_spawn_count += 1
                 else:
                     additional_fruit = None
                 
@@ -177,12 +191,17 @@ def game_loop():
             elif additional_fruit and snake.check_collision(additional_fruit):
                 score += 2
                 fruit_tally['NORMAL'] += 1
+                true_score += 2  # Increase true score for additional red fruit
 
                 animations.append(Animation('+2', additional_fruit.position.copy(), RED))
                 additional_fruit = None  # Remove the additional red fruit
                 fruit = generate_fruit(snake.body)  # Remove the special/golden fruit and generate a new one
                 if fruit.type in ['GOLDEN', 'SPECIAL']:
                     additional_fruit = generate_additional_red_fruit(snake.body, fruit.position)
+                    if fruit.type == 'SPECIAL':
+                        special_spawn_count += 1
+                    elif fruit.type == 'GOLDEN':
+                        golden_spawn_count += 1
 
             else:
                 # If the snake didn't eat the fruit, move as normal by removing the last segment
@@ -190,7 +209,7 @@ def game_loop():
                 
             if snake.check_game_over():
                 game_over = True
-                play_again = game_over_screen(score, fruit_tally)  # Pass fruit_tally to game_over_screen
+                play_again = game_over_screen(score, fruit_tally, true_score, special_spawn_count, golden_spawn_count)  # Pass fruit_tally, true_score, special_spawn_count, and golden_spawn_count to game_over_screen
                 if not play_again:
                     return  
                 else:
@@ -198,10 +217,17 @@ def game_loop():
                     direction = 'RIGHT'
                     fruit = generate_fruit(snake.body)  # This is now a Fruit object
                     score = 0
+                    true_score = 0
                     game_speed = SNAKE_SPEED
                     fruit_tally = {'NORMAL': 0, 'SPECIAL': 0, 'GOLDEN': 0}  # Reset fruit tally here
+                    special_spawn_count = 0  # Reset special spawn count
+                    golden_spawn_count = 0  # Reset golden spawn count
                     if fruit.type in ['GOLDEN', 'SPECIAL']:
                         additional_fruit = generate_additional_red_fruit(snake.body, fruit.position)
+                        if fruit.type == 'SPECIAL':
+                            special_spawn_count += 1
+                        elif fruit.type == 'GOLDEN':
+                            golden_spawn_count += 1
                     else:
                         additional_fruit = None
             else:
