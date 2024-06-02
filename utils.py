@@ -1,9 +1,34 @@
 import pygame
 from constants import *
+import json
+import os
 import random
 from collections import namedtuple 
-import json
 
+"""
+# Read/wright JSON Functions aka high_scores
+def load_high_scores(file_path='high_scores.json'):
+    if not os.path.exists(file_path):
+        with open(file_path, 'w') as file:
+            json.dump({"high_scores": [], "high_true_scores": []}, file)
+        print(f"Created new high_scores file at {file_path}")
+    try:
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+            print("High scores loaded successfully:", data)
+            return data
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print("Error loading high scores:", e)
+        return {"high_scores": [], "high_true_scores": []}
+
+def save_high_scores(data, file_path='high_scores.json'):
+    try:
+        with open(file_path, 'w') as file:
+            json.dump(data, file, indent=4)
+            print("High scores saved successfully:", data)
+    except Exception as e:
+        print("Error saving high scores:", e)
+"""
 
 # Create a namedtuple to represent fruits
 Fruit = namedtuple('Fruit', ['position', 'type'])
@@ -109,17 +134,6 @@ def animate_score_increase(score_increase, x, y):
         pygame.display.update()
         pygame.time.wait(50)  # Wait a little bit before drawing the next frame
         
-# Read/wright JSON Functions aka high_scores
 
-"""def load_high_scores(file_path='high_scores.json'):
-    try:
-        with open(file_path, 'r') as file:
-            return json.load(file)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return {"high_scores": [], "high_true_scores": []}
 
-def save_high_scores(data, file_path='high_scores.json'):
-    with open(file_path, 'w') as file:
-        json.dump(data, file, indent=4)        
-    """ 
     
