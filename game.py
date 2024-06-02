@@ -54,9 +54,9 @@ def game_over_screen(score, fruit_tally):
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
                     return True
-                if event.key == pygame.K_q: 
+                if event.key == pygame.K_q:
                     pygame.quit()
-                    return False  
+                    return False
             if event.type == pygame.QUIT:
                 pygame.quit()
                 return False
@@ -67,23 +67,27 @@ def game_loop():
 
     # Set up the display
     WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
-    pygame.display.set_caption('No Step on SNEK!!!') 
+    pygame.display.set_caption('No Step on SNEK!!!')
     FONT = pygame.font.Font(None, FONT_SIZE)
-    line1_font = pygame.font.Font(None, FONT_SIZE * 3) # Create a new font object with a larger font size for line1
-    line1 = line1_font.render('No sTeP oN Sn3k!!!!!!', True, GREEN) # Use the new font object to render line1
-    line2 = FONT.render('Press SPACEBAR to start!', True, WHITE) 
+    line1_font = pygame.font.Font(None, FONT_SIZE * 3)  # Create a new font object with a larger font size for line1
+    line1 = line1_font.render('No sTeP oN Sn3k!!!!!!', True, GREEN)  # Use the new font object to render line1
+    line2 = FONT.render('Press SPACEBAR to start!', True, WHITE)
     line3 = FONT.render('Press Q to quit!', True, WHITE)
     
     # Load Title image
-    script_dir = os.path.dirname(os.path.abspath(__file__)) # Absolute directory the script is in
+    script_dir = os.path.dirname(os.path.abspath(__file__))  # Absolute directory the script is in
     image_path = os.path.join(script_dir, 'Resources', 'Snek_Marine.jpg')
     image = pygame.image.load(image_path)
-    image = pygame.transform.scale(image, (200, 200)) # Replace with your desired size
+    image = pygame.transform.scale(image, (200, 200))  # Replace with your desired size
 
     # Initialize the game state
     snake = Snake([[300, 150], [90, 50], [80, 50]])
     direction = 'RIGHT'
     fruit = generate_fruit(snake.body)  # This is now a Fruit object
+    additional_fruit = None
+
+    if fruit.type in ['GOLDEN', 'SPECIAL']:
+        additional_fruit = generate_additional_red_fruit(snake.body, fruit.position)
 
     score = 0  # Initialize score
     global game_speed  # Initialize game speed
@@ -159,11 +163,27 @@ def game_loop():
 
                 # Add animation
                 animations.append(Animation(f'+{score_increase}', fruit.position.copy(), color))
-                # Generate new fruit and don't remove the tail of the snake, so it grows
-                fruit = generate_fruit(snake.body)  # This is now a Fruit object
+
+                # Generate new fruit
+                fruit = generate_fruit(snake.body)
+                if fruit.type in ['GOLDEN', 'SPECIAL']:
+                    print("Special or golden fruit eaten. Generating additional red fruit.")
+                    additional_fruit = generate_additional_red_fruit(snake.body, fruit.position)
+                else:
+                    additional_fruit = None
                 
                 # Adjust game speed based on the score
                 game_speed = SNAKE_SPEED + (score // 50) * 5
+            elif additional_fruit and snake.check_collision(additional_fruit):
+                score += 2
+                fruit_tally['NORMAL'] += 1
+
+                animations.append(Animation('+2', additional_fruit.position.copy(), RED))
+                additional_fruit = None  # Remove the additional red fruit
+                fruit = generate_fruit(snake.body)  # Remove the special/golden fruit and generate a new one
+                if fruit.type in ['GOLDEN', 'SPECIAL']:
+                    additional_fruit = generate_additional_red_fruit(snake.body, fruit.position)
+
             else:
                 # If the snake didn't eat the fruit, move as normal by removing the last segment
                 snake.remove_last_segment()
@@ -180,6 +200,10 @@ def game_loop():
                     score = 0
                     game_speed = SNAKE_SPEED
                     fruit_tally = {'NORMAL': 0, 'SPECIAL': 0, 'GOLDEN': 0}  # Reset fruit tally here
+                    if fruit.type in ['GOLDEN', 'SPECIAL']:
+                        additional_fruit = generate_additional_red_fruit(snake.body, fruit.position)
+                    else:
+                        additional_fruit = None
             else:
                 play_again = False
 
@@ -187,6 +211,8 @@ def game_loop():
             WINDOW.fill(GRAY)
             draw_snake(WINDOW, snake)
             draw_fruit(WINDOW, fruit)
+            if additional_fruit:
+                draw_fruit(WINDOW, additional_fruit)
             
             # Draw animations
             for anim in animations:
@@ -206,10 +232,8 @@ def game_loop():
             pygame.draw.rect(WINDOW, GOLD, pygame.Rect(WIDTH - 50, 10, 20, 20))  # Draw a golden square
             WINDOW.blit(gold_text, (WIDTH - 25, 10))  # Display the gold fruit tally
 
-
             # Draw a border below the score and fruit tally
             pygame.draw.line(WINDOW, WHITE, (0, FONT_SIZE + 20), (WIDTH, FONT_SIZE + 20), 2)
-
 
             # Display the score
             score_text = FONT.render(f'Score: {score}', True, WHITE)

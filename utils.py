@@ -21,14 +21,13 @@ def move_snake(snake, direction):
         snake.insert(0, [snake[0][0], snake[0][1] + SNAKE_SIZE])
 
 def draw_fruit(WINDOW, fruit):
-    if fruit.type == 'GOLDEN':
-        color = GOLD
-    elif fruit.type == 'SPECIAL':
-        color = BLUE
-    else:  # 'NORMAL'
-        color = RED
+    color_map = {
+        'GOLDEN': GOLD,
+        'SPECIAL': BLUE,
+        'NORMAL': RED
+    }
+    color = color_map.get(fruit.type, RED)
     pygame.draw.rect(WINDOW, color, pygame.Rect(fruit.position[0], fruit.position[1], SNAKE_SIZE, SNAKE_SIZE))
-
 
 def check_collision(snake, fruit):
     # Check if the head of the snake is within the fruit rectangle
@@ -48,7 +47,7 @@ def check_game_over(snake):
         return True
     return False
 
-def generate_fruit(snake_body):
+def generate_fruit(snake_body, special=False):
     while True:
         x_pos = random.randrange(0, WIDTH - SNAKE_SIZE, SNAKE_SIZE)
         y_pos = random.randrange(FONT_SIZE + 20, HEIGHT - SNAKE_SIZE, SNAKE_SIZE)
@@ -67,8 +66,38 @@ def generate_fruit(snake_body):
         if not collision:
             break
 
-    return Fruit(position, random.choices(['NORMAL', 'SPECIAL', 'GOLDEN'], [0.89, 0.11, 0.01])[0])
+    if special:
+        fruit_type = random.choices(['SPECIAL', 'GOLDEN'], [0.9, 0.1])[0]
+    else:
+        fruit_type = random.choices(['NORMAL', 'SPECIAL', 'GOLDEN'], [0.8, 0.15, 0.05])[0]
 
+    print(f"Generated fruit: {fruit_type} at position {position}")
+    
+    return Fruit(position, fruit_type)
+
+def generate_additional_red_fruit(snake_body, special_fruit_position):
+    while True:
+        x_pos = random.randrange(0, WIDTH - SNAKE_SIZE, SNAKE_SIZE)
+        y_pos = random.randrange(FONT_SIZE + 20, HEIGHT - SNAKE_SIZE, SNAKE_SIZE)
+        position = [x_pos, y_pos]
+
+        fruit_rect = pygame.Rect(x_pos, y_pos, SNAKE_SIZE, SNAKE_SIZE)
+        special_fruit_rect = pygame.Rect(special_fruit_position[0], special_fruit_position[1], SNAKE_SIZE, SNAKE_SIZE)
+        
+        # Check if the fruit's area collides with any part of the snake's body or the special fruit
+        collision = False
+        for segment in snake_body:
+            segment_rect = pygame.Rect(segment[0], segment[1], SNAKE_SIZE, SNAKE_SIZE)
+            if fruit_rect.colliderect(segment_rect) or fruit_rect.colliderect(special_fruit_rect):
+                collision = True
+                break
+        
+        if not collision:
+            break
+
+    print(f"Generated additional red fruit at position {position}")
+    
+    return Fruit(position, 'NORMAL')
 
 def animate_score_increase(score_increase, x, y):
     for size in range(20, 40, 2):  # This will create a zoom-in effect
