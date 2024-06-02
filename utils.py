@@ -2,6 +2,8 @@ import pygame
 from constants import *
 import random
 from collections import namedtuple 
+import json
+
 
 # Create a namedtuple to represent fruits
 Fruit = namedtuple('Fruit', ['position', 'type'])
@@ -106,3 +108,18 @@ def animate_score_increase(score_increase, x, y):
         WINDOW.blit(text, (x, y))
         pygame.display.update()
         pygame.time.wait(50)  # Wait a little bit before drawing the next frame
+        
+# Read/wright JSON Functions aka high_scores
+
+"""def load_high_scores(file_path='high_scores.json'):
+    try:
+        with open(file_path, 'r') as file:
+            return json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {"high_scores": [], "high_true_scores": []}
+
+def save_high_scores(data, file_path='high_scores.json'):
+    with open(file_path, 'w') as file:
+        json.dump(data, file, indent=4)        
+    """ 
+    
