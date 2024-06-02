@@ -20,8 +20,7 @@ def game_over_screen(score, fruit_tally, true_score, special_spawn_count, golden
         new_high_score = True
 
     # Calculate the grind score and luck factor
-    total_fruits = sum(fruit_tally.values())
-    total_special_golden_spawns = special_spawn_count + golden_spawn_count
+    total_fruits = sum(fruit_tally.values()) + special_spawn_count + golden_spawn_count
     luck_factor = ((special_spawn_count + golden_spawn_count * 10) / total_fruits) * 100 if total_fruits > 0 else 0
 
     WINDOW.fill(GRAY)
@@ -208,6 +207,13 @@ def game_loop():
                 snake.remove_last_segment()
                 
             if snake.check_game_over():
+                # Adjust spawn counts if the game is over
+                if additional_fruit:
+                    if fruit.type == 'SPECIAL':
+                        special_spawn_count -= 1
+                    elif fruit.type == 'GOLDEN':
+                        golden_spawn_count -= 1
+
                 game_over = True
                 play_again = game_over_screen(score, fruit_tally, true_score, special_spawn_count, golden_spawn_count)  # Pass fruit_tally, true_score, special_spawn_count, and golden_spawn_count to game_over_screen
                 if not play_again:
