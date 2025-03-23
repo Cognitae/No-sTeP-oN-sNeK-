@@ -12,6 +12,65 @@ WINDOW = display.set_mode((WIDTH, HEIGHT))
 
 high_score = 0  # Initialize high_score
 
+def save_score_screen(score, true_score):
+    name = ""
+    while True:
+        WINDOW.fill(GRAY)
+        prompt = FONT.render("Enter your name: " + name, True, WHITE)
+        WINDOW.blit(prompt, (WIDTH // 2 - prompt.get_width() // 2, HEIGHT // 2 - FONT_SIZE))
+        pygame.display.update()
+
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_RETURN:
+                    return name
+                elif event.key == pygame.K_BACKSPACE:
+                    name = name[:-1]
+                else:
+                    name += event.unicode
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                return None
+
+def display_high_scores(high_scores, high_true_scores):
+    scroll_offset = 0
+    max_display = (HEIGHT // FONT_SIZE) - 4  # Calculate the maximum number of scores that can be displayed
+
+    while True:
+        WINDOW.fill(GRAY)
+        title = FONT.render("High Scores", True, WHITE)
+        WINDOW.blit(title, (WIDTH // 4 - title.get_width() // 2, FONT_SIZE))
+
+        for i, (name, score) in enumerate(high_scores[scroll_offset:scroll_offset + max_display]):
+            text = FONT.render(f"{scroll_offset + i + 1}. {name}: {score}", True, WHITE)
+            WINDOW.blit(text, (WIDTH // 4 - text.get_width() // 2, FONT_SIZE * (i + 2)))
+
+        title = FONT.render("High True Scores", True, WHITE)
+        WINDOW.blit(title, (3 * WIDTH // 4 - title.get_width() // 2, FONT_SIZE))
+
+        for i, (name, true_score) in enumerate(high_true_scores[scroll_offset:scroll_offset + max_display]):
+            text = FONT.render(f"{scroll_offset + i + 1}. {name}: {true_score}", True, WHITE)
+            WINDOW.blit(text, (3 * WIDTH // 4 - text.get_width() // 2, FONT_SIZE * (i + 2)))
+
+        pygame.display.update()
+
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    return True
+                if event.key == pygame.K_q:
+                    pygame.quit()
+                    return False
+                if event.key == pygame.K_DOWN:
+                    if scroll_offset + max_display < max(len(high_scores), len(high_true_scores)):
+                        scroll_offset += 1
+                if event.key == pygame.K_UP:
+                    if scroll_offset > 0:
+                        scroll_offset -= 1
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                return False
+
 def game_over_screen(score, fruit_tally, true_score, special_spawn_count, golden_spawn_count):
     global high_score
     new_high_score = False
@@ -25,7 +84,7 @@ def game_over_screen(score, fruit_tally, true_score, special_spawn_count, golden
 
     WINDOW.fill(GRAY)
 
-    lines = [f'GAME OVER', f'Score: {score}', f'High Score: {high_score}', f'True Score: {int(true_score)}', f'Luck Factor: {luck_factor:.2f}%', f'Press SPACEBAR to play again', 'Press Q to quit']
+    lines = [f'GAME OVER', f'Score: {score}', f'High Score: {high_score}', f'True Score: {int(true_score)}', f'Luck Factor: {luck_factor:.2f}%', f'Press SPACEBAR to play again', 'Press Q to quit', 'Press S to save score']
     
     if new_high_score:
         lines.insert(1, "New High Score! Congratulations!")
@@ -55,6 +114,17 @@ def game_over_screen(score, fruit_tally, true_score, special_spawn_count, golden
                 if event.key == pygame.K_q:
                     pygame.quit()
                     return False
+                if event.key == pygame.K_s:
+                    name = save_score_screen(score, true_score)
+                    if name:
+                        high_scores = load_high_scores()
+                        high_scores["high_scores"].append((name, score))
+                        high_scores["high_true_scores"].append((name, true_score))
+                        high_scores["high_scores"].sort(key=lambda x: x[1], reverse=True)
+                        high_scores["high_true_scores"].sort(key=lambda x: x[1], reverse=True)
+                        save_high_scores(high_scores)
+                        display_high_scores(high_scores["high_scores"], high_scores["high_true_scores"])
+                        return True
             if event.type == pygame.QUIT:
                 pygame.quit()
                 return False

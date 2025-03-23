@@ -5,7 +5,6 @@ import os
 import random
 from collections import namedtuple 
 
-"""
 # Read/wright JSON Functions aka high_scores
 def load_high_scores(file_path='high_scores.json'):
     if not os.path.exists(file_path):
@@ -28,7 +27,6 @@ def save_high_scores(data, file_path='high_scores.json'):
             print("High scores saved successfully:", data)
     except Exception as e:
         print("Error saving high scores:", e)
-"""
 
 # Create a namedtuple to represent fruits
 Fruit = namedtuple('Fruit', ['position', 'type'])
@@ -96,7 +94,7 @@ def generate_fruit(snake_body, special=False):
     if special:
         fruit_type = random.choices(['SPECIAL', 'GOLDEN'], [0.9, 0.1])[0]
     else:
-        fruit_type = random.choices(['NORMAL', 'SPECIAL', 'GOLDEN'], [0.8, 0.15, 0.05])[0]
+        fruit_type = random.choices(['NORMAL', 'SPECIAL', 'GOLDEN'], [0.80, 0.1, 0.01])[0]  # Adjusted spawn rates
 
     print(f"Generated fruit: {fruit_type} at position {position}")
     
@@ -133,7 +131,6 @@ def animate_score_increase(score_increase, x, y):
         WINDOW.blit(text, (x, y))
         pygame.display.update()
         pygame.time.wait(50)  # Wait a little bit before drawing the next frame
-        
 
 
-    
+
