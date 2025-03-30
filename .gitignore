@@ -22,3 +22,4 @@ high_scores.json
 *.pyc
 high_scores.json
 high_scores.json
+__pycache__/fruit.cpython-310.pyc
