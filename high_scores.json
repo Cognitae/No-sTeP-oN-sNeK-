@@ -1,4 +1,38 @@
 {
-    "high_scores": [],
-    "high_true_scores": []
+    "high_scores": [
+        [
+            "Adam Black",
+            186
+        ],
+        [
+            "better",
+            20
+        ],
+        [
+            "arb",
+            14
+        ],
+        [
+            "Asdam",
+            12
+        ]
+    ],
+    "high_true_scores": [
+        [
+            "Adam Black",
+            59
+        ],
+        [
+            "better",
+            16
+        ],
+        [
+            "arb",
+            14
+        ],
+        [
+            "Asdam",
+            12
+        ]
+    ]
 }
