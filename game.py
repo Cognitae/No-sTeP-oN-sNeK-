@@ -141,6 +141,7 @@ def game_loop():
     line1 = line1_font.render('No sTeP oN Sn3k!!!!!!', True, GREEN)  # Use the new font object to render line1
     line2 = FONT.render('Press SPACEBAR to start!', True, WHITE)
     line3 = FONT.render('Press Q to quit!', True, WHITE)
+    line4 = FONT.render('Press A to watch AI play!', True, WHITE)  # Add new option for AI
     
     # Load Title image
     script_dir = os.path.dirname(os.path.abspath(__file__))  # Absolute directory the script is in
@@ -202,6 +203,14 @@ def game_loop():
                         print("Game restarted")
                 if event.key == pygame.K_q:
                     return False
+                if event.key == pygame.K_a and not game_started:  # New key handler for AI
+                    try:
+                        from snake_ai import watch_ai_play
+                        watch_ai_play()
+                    except ImportError:
+                        print("AI module not found. Please run 'pip install tensorflow' and train the AI first.")
+                    except Exception as e:
+                        print(f"Error launching AI: {e}")
 
         keys = pygame.key.get_pressed()
         new_direction = direction
@@ -351,6 +360,7 @@ def game_loop():
             WINDOW.blit(image, (WIDTH // 2 - image.get_width() // 2, HEIGHT // 2 - image.get_height() // 2))
             WINDOW.blit(line2, (WIDTH // 2 - line2.get_width() // 2, HEIGHT // 1.25))
             WINDOW.blit(line3, (WIDTH // 2 - line3.get_width() // 2, HEIGHT // 1.25 + FONT_SIZE))
+            WINDOW.blit(line4, (WIDTH // 2 - line4.get_width() // 2, HEIGHT // 1.25 + 2 * FONT_SIZE))  # Add new line for AI option
 
             
         pygame.display.update()
