@@ -10,6 +10,7 @@ from fruit import Fruit
 from constants import *
 from utils import generate_fruit
 import matplotlib.pyplot as plt
+import os
 
 class SnakeGameEnv:
     """Environment wrapper for the Snake game to be used with RL algorithms"""
@@ -20,6 +21,7 @@ class SnakeGameEnv:
             pygame.init()
             self.window = pygame.display.set_mode((WIDTH, HEIGHT))
             pygame.display.set_caption('Snake AI Training')
+            pygame.font.init()
             self.font = pygame.font.Font(None, FONT_SIZE)
             self.clock = pygame.time.Clock()
 
@@ -49,8 +51,8 @@ class SnakeGameEnv:
         self.snake.move(direction)
         self.steps += 1
         
-        # Check if game is over
-        reward = 0
+        # Small penalty for each step
+        reward = -0.01
         if self.snake.check_game_over():
             reward = -10  # Negative reward for dying
             self.done = True
@@ -69,22 +71,21 @@ class SnakeGameEnv:
             
             # Check if snake ate the fruit
             if self.snake.check_collision(self.fruit):
-                if self.fruit.type == 'GOLDEN':
-                    reward = 10
-                elif self.fruit.type == 'SPECIAL':
-                    reward = 5
-                else:  # 'NORMAL'
-                    reward = 1
-                
-                self.score += 1
+                if self.fruit.type == 'NORMAL':  # Reward only for red fruit
+                    reward = 5  # Increase reward for eating red fruit
+                    self.score += 1
+                    self.max_steps += 100  # Extend steps limit when red fruit is eaten
+                else:  # No reward for blue or gold fruit
+                    reward = 0
+
+                # Generate a new fruit regardless of type
                 self.fruit = generate_fruit(self.snake.body)
-                self.max_steps += 100  # Extend steps limit when fruit is eaten
             else:
                 # If not eating fruit, remove the last segment
                 self.snake.remove_last_segment()
         
         # Render if needed
-        if self.render:
+        if self.render and hasattr(self, 'window'):
             self._render_frame()
         
         return self._get_state(), reward, self.done, {"score": self.score}
@@ -217,7 +218,7 @@ class DQNAgent:
         self.gamma = 0.95  # Discount factor
         self.epsilon = 1.0  # Exploration rate
         self.epsilon_min = 0.01
-        self.epsilon_decay = 0.995
+        self.epsilon_decay = 0.999  # Epsilon decay rate
         self.learning_rate = 0.001
         self.model = self._build_model()
         self.target_model = self._build_model()
@@ -278,7 +279,7 @@ class DQNAgent:
         if self.epsilon > self.epsilon_min:
             self.epsilon *= self.epsilon_decay
 
-def train_snake_ai(episodes=100, batch_size=64, render_every=10):
+def train_snake_ai(episodes=10000, batch_size=64, render_every=100):
     """Train the Snake AI agent"""
     env = SnakeGameEnv(render=False)
     state_size = 13  # Size of our state representation
@@ -286,12 +287,13 @@ def train_snake_ai(episodes=100, batch_size=64, render_every=10):
     agent = DQNAgent(state_size, action_size)
     
     scores = []
+    total_rewards = []  # Initialize total_rewards to track rewards per episode
     update_target_every = 5
     
     for e in range(episodes):
         # Reset environment for a new episode
         state = env.reset()
-        total_reward = 0
+        total_reward = 0  # Initialize total_reward for the current episode
         render_this_episode = (e % render_every == 0)
         
         if render_this_episode:
@@ -312,6 +314,7 @@ def train_snake_ai(episodes=100, batch_size=64, render_every=10):
             if done:
                 # Update stats
                 scores.append(info["score"])
+                total_rewards.append(total_reward)  # Append total reward
                 print(f"Episode: {e+1}/{episodes}, Score: {info['score']}, Reward: {total_reward:.2f}, Epsilon: {agent.epsilon:.2f}")
                 break
         
@@ -331,10 +334,12 @@ def train_snake_ai(episodes=100, batch_size=64, render_every=10):
     
     # Plot learning curve
     plt.figure(figsize=(10, 6))
-    plt.plot(scores)
+    plt.plot(scores, label='Score')
+    plt.plot(total_rewards, label='Total Reward')  # Add total rewards
     plt.title('Snake AI Learning Curve')
     plt.xlabel('Episode')
-    plt.ylabel('Score')
+    plt.ylabel('Score / Reward')
+    plt.legend()
     plt.savefig('learning_curve.png')
     plt.show()
     
@@ -342,37 +347,41 @@ def train_snake_ai(episodes=100, batch_size=64, render_every=10):
 
 def watch_ai_play(model_path='snake_ai_model.h5', games=5):
     """Watch the trained AI play Snake"""
+    if not os.path.exists(model_path):
+        print(f"Error: Model file '{model_path}' not found. Please train the AI first by running the script.")
+        return
+
     model = keras.models.load_model(model_path)
     env = SnakeGameEnv(render=True)
     state_size = 13
-    
+
     for game in range(games):
         state = env.reset()
         done = False
-        
+
         while not done:
             # Handle events
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     return
-            
+
             # AI chooses action
             q_values = model.predict(np.array([state]), verbose=0)
             action = np.argmax(q_values[0])
-            
+
             # Take action
             state, _, done, info = env.step(action)
-            
+
             # Slow down visualization
             time.sleep(0.1)
-        
+
         print(f"Game {game+1}: Score = {info['score']}")
         time.sleep(1)  # Pause between games
 
 if __name__ == "__main__":
     # Train the AI
     print("Starting training...")
-    agent = train_snake_ai(episodes=100, batch_size=64, render_every=10)
+    agent = train_snake_ai(episodes=10000, batch_size=64, render_every=100)  # Update episodes to 10,000
     
     # Watch the trained AI play
     print("\nWatching trained AI play...")

@@ -1,0 +1,1015 @@
+Generated fruit: NORMAL at position [130, 328]
+Episode: 54/500, Score: 0, Reward: -10.00, Epsilon: 0.72
+Generated fruit: NORMAL at position [430, 388]
+Episode: 55/500, Score: 0, Reward: -8.96, Epsilon: 0.72
+Generated fruit: NORMAL at position [290, 318]
+Episode: 56/500, Score: 0, Reward: -9.33, Epsilon: 0.71
+Updated target model at episode 56
+Generated fruit: NORMAL at position [200, 288]
+Episode: 57/500, Score: 0, Reward: -9.84, Epsilon: 0.70
+Generated fruit: NORMAL at position [490, 278]
+Episode: 58/500, Score: 0, Reward: -9.00, Epsilon: 0.70
+Generated fruit: NORMAL at position [550, 278]
+Episode: 59/500, Score: 0, Reward: -10.00, Epsilon: 0.69
+Generated fruit: SPECIAL at position [320, 78]
+Episode: 60/500, Score: 0, Reward: -10.16, Epsilon: 0.68
+Generated fruit: NORMAL at position [350, 168]
+Episode: 61/500, Score: 0, Reward: -9.49, Epsilon: 0.68
+Updated target model at episode 61
+Generated fruit: NORMAL at position [320, 288]
+Episode: 62/500, Score: 0, Reward: -10.00, Epsilon: 0.67
+Generated fruit: NORMAL at position [60, 218]
+Episode: 63/500, Score: 0, Reward: -9.94, Epsilon: 0.66
+Generated fruit: NORMAL at position [430, 168]
+Episode: 64/500, Score: 0, Reward: -10.07, Epsilon: 0.66
+Generated fruit: NORMAL at position [580, 98]
+Episode: 65/500, Score: 0, Reward: -9.74, Epsilon: 0.65
+Generated fruit: SPECIAL at position [290, 298]
+Episode: 66/500, Score: 0, Reward: -9.26, Epsilon: 0.64
+Updated target model at episode 66
+Generated fruit: NORMAL at position [330, 68]
+Episode: 67/500, Score: 0, Reward: -9.63, Epsilon: 0.64
+Generated fruit: NORMAL at position [390, 228]
+Episode: 68/500, Score: 0, Reward: -9.22, Epsilon: 0.63
+Generated fruit: NORMAL at position [80, 168]
+Episode: 69/500, Score: 0, Reward: -10.00, Epsilon: 0.62
+Generated fruit: NORMAL at position [40, 298]
+Episode: 70/500, Score: 0, Reward: -9.91, Epsilon: 0.62
+Generated fruit: NORMAL at position [40, 108]
+Episode: 71/500, Score: 0, Reward: -10.02, Epsilon: 0.61
+Updated target model at episode 71
+Generated fruit: NORMAL at position [510, 258]
+Episode: 72/500, Score: 0, Reward: -9.93, Epsilon: 0.61
+Generated fruit: NORMAL at position [280, 388]
+Episode: 73/500, Score: 0, Reward: -9.83, Epsilon: 0.60
+Generated fruit: NORMAL at position [60, 328]
+Episode: 74/500, Score: 0, Reward: -10.05, Epsilon: 0.59
+Generated fruit: NORMAL at position [360, 308]
+Episode: 75/500, Score: 0, Reward: -9.81, Epsilon: 0.59
+Generated fruit: NORMAL at position [310, 318]
+Episode: 76/500, Score: 0, Reward: -10.00, Epsilon: 0.58
+Updated target model at episode 76
+Generated fruit: NORMAL at position [60, 58]
+Episode: 77/500, Score: 0, Reward: -10.02, Epsilon: 0.58
+Generated fruit: NORMAL at position [560, 38]
+Episode: 78/500, Score: 0, Reward: -10.04, Epsilon: 0.57
+Generated fruit: NORMAL at position [240, 348]
+Episode: 79/500, Score: 0, Reward: -10.01, Epsilon: 0.56
+Generated fruit: NORMAL at position [390, 328]
+Episode: 80/500, Score: 0, Reward: -8.42, Epsilon: 0.56
+Generated fruit: NORMAL at position [90, 238]
+Episode: 81/500, Score: 0, Reward: -10.00, Epsilon: 0.55
+Updated target model at episode 81
+Generated fruit: NORMAL at position [460, 188]
+Episode: 82/500, Score: 0, Reward: -9.90, Epsilon: 0.55
+Generated fruit: NORMAL at position [550, 188]
+Episode: 83/500, Score: 0, Reward: -9.25, Epsilon: 0.54
+Generated fruit: NORMAL at position [10, 138]
+Episode: 84/500, Score: 0, Reward: -9.54, Epsilon: 0.54
+Generated fruit: NORMAL at position [100, 148]
+Episode: 85/500, Score: 0, Reward: -9.84, Epsilon: 0.53
+Generated fruit: SPECIAL at position [360, 198]
+Episode: 86/500, Score: 0, Reward: -9.71, Epsilon: 0.53
+Updated target model at episode 86
+Generated fruit: NORMAL at position [150, 278]
+Episode: 87/500, Score: 0, Reward: -9.65, Epsilon: 0.52
+Generated fruit: NORMAL at position [310, 248]
+Episode: 88/500, Score: 0, Reward: -9.75, Epsilon: 0.52
+Generated fruit: NORMAL at position [30, 108]
+Episode: 89/500, Score: 0, Reward: -9.74, Epsilon: 0.51
+Generated fruit: NORMAL at position [480, 38]
+Episode: 90/500, Score: 0, Reward: -10.03, Epsilon: 0.50
+Generated fruit: NORMAL at position [520, 258]
+Episode: 91/500, Score: 0, Reward: -10.02, Epsilon: 0.50
+Updated target model at episode 91
+Generated fruit: NORMAL at position [510, 338]
+Episode: 92/500, Score: 0, Reward: -10.00, Epsilon: 0.49
+Generated fruit: NORMAL at position [390, 108]
+Episode: 93/500, Score: 0, Reward: -10.03, Epsilon: 0.49
+Generated fruit: NORMAL at position [70, 318]
+Episode: 94/500, Score: 0, Reward: -9.87, Epsilon: 0.48
+Generated fruit: SPECIAL at position [250, 138]
+Episode: 95/500, Score: 0, Reward: -10.00, Epsilon: 0.48
+Generated fruit: NORMAL at position [200, 198]
+Episode: 96/500, Score: 0, Reward: -9.55, Epsilon: 0.48
+Updated target model at episode 96
+Generated fruit: SPECIAL at position [120, 328]
+Episode: 97/500, Score: 0, Reward: -9.55, Epsilon: 0.47
+Generated fruit: NORMAL at position [230, 218]
+Episode: 98/500, Score: 0, Reward: -9.61, Epsilon: 0.47
+Generated fruit: NORMAL at position [450, 388]
+Episode: 99/500, Score: 0, Reward: -8.92, Epsilon: 0.46
+Generated fruit: NORMAL at position [110, 198]
+Episode: 100/500, Score: 0, Reward: -10.02, Epsilon: 0.46
+Generated fruit: NORMAL at position [20, 68]
+Episode: 101/500, Score: 0, Reward: -10.02, Epsilon: 0.45
+Updated target model at episode 101
+Generated fruit: NORMAL at position [340, 108]
+Episode: 102/500, Score: 0, Reward: -9.96, Epsilon: 0.45
+Generated fruit: NORMAL at position [40, 118]
+Episode: 103/500, Score: 0, Reward: -10.00, Epsilon: 0.44
+Generated fruit: NORMAL at position [320, 228]
+Episode: 104/500, Score: 0, Reward: -8.99, Epsilon: 0.44
+Generated fruit: NORMAL at position [130, 268]
+Episode: 105/500, Score: 0, Reward: -9.84, Epsilon: 0.43
+Generated fruit: SPECIAL at position [510, 278]
+Episode: 106/500, Score: 0, Reward: -9.10, Epsilon: 0.43
+Updated target model at episode 106
+Generated fruit: NORMAL at position [490, 118]
+Episode: 107/500, Score: 0, Reward: -9.82, Epsilon: 0.43
+Generated fruit: NORMAL at position [530, 178]
+Episode: 108/500, Score: 0, Reward: -9.65, Epsilon: 0.42
+Generated fruit: NORMAL at position [460, 278]
+Episode: 109/500, Score: 0, Reward: -9.40, Epsilon: 0.42
+Generated fruit: NORMAL at position [200, 218]
+Episode: 110/500, Score: 0, Reward: -9.80, Epsilon: 0.41
+Generated fruit: NORMAL at position [280, 258]
+Episode: 111/500, Score: 0, Reward: -9.80, Epsilon: 0.41
+Updated target model at episode 111
+Generated fruit: NORMAL at position [450, 318]
+Episode: 112/500, Score: 0, Reward: -10.00, Epsilon: 0.40
+Generated fruit: NORMAL at position [160, 388]
+Episode: 113/500, Score: 0, Reward: -9.51, Epsilon: 0.40
+Generated fruit: NORMAL at position [80, 238]
+Episode: 114/500, Score: 0, Reward: -9.04, Epsilon: 0.40
+Generated fruit: NORMAL at position [20, 148]
+Episode: 115/500, Score: 0, Reward: -9.94, Epsilon: 0.39
+Generated fruit: NORMAL at position [370, 298]
+Episode: 116/500, Score: 0, Reward: -9.70, Epsilon: 0.39
+Updated target model at episode 116
+Generated fruit: NORMAL at position [420, 108]
+Episode: 117/500, Score: 0, Reward: -9.86, Epsilon: 0.38
+Generated fruit: NORMAL at position [20, 288]
+Episode: 118/500, Score: 0, Reward: -9.64, Epsilon: 0.38
+Generated fruit: NORMAL at position [430, 148]
+Episode: 119/500, Score: 0, Reward: -9.90, Epsilon: 0.38
+Generated fruit: NORMAL at position [420, 388]
+Episode: 120/500, Score: 0, Reward: -9.70, Epsilon: 0.37
+Generated fruit: SPECIAL at position [290, 98]
+Episode: 121/500, Score: 0, Reward: -10.00, Epsilon: 0.37
+Updated target model at episode 121
+Generated fruit: NORMAL at position [580, 218]
+Episode: 122/500, Score: 0, Reward: -10.00, Epsilon: 0.37
+Generated fruit: NORMAL at position [110, 188]
+Episode: 123/500, Score: 0, Reward: -9.73, Epsilon: 0.36
+Generated fruit: NORMAL at position [120, 68]
+Episode: 124/500, Score: 0, Reward: -9.83, Epsilon: 0.36
+Generated fruit: NORMAL at position [280, 258]
+Episode: 125/500, Score: 0, Reward: -9.00, Epsilon: 0.36
+Generated fruit: NORMAL at position [140, 198]
+Episode: 126/500, Score: 0, Reward: -9.90, Epsilon: 0.35
+Updated target model at episode 126
+Generated fruit: NORMAL at position [80, 278]
+Episode: 127/500, Score: 0, Reward: -9.71, Epsilon: 0.35
+Generated fruit: NORMAL at position [90, 148]
+Episode: 128/500, Score: 0, Reward: -10.01, Epsilon: 0.34
+Generated fruit: NORMAL at position [160, 248]
+Episode: 129/500, Score: 0, Reward: -9.60, Epsilon: 0.34
+Generated fruit: GOLDEN at position [0, 58]
+Episode: 130/500, Score: 0, Reward: -10.04, Epsilon: 0.34
+Generated fruit: NORMAL at position [250, 138]
+Episode: 131/500, Score: 0, Reward: -9.90, Epsilon: 0.33
+Updated target model at episode 131
+Generated fruit: NORMAL at position [490, 368]
+Episode: 132/500, Score: 0, Reward: -9.70, Epsilon: 0.33
+Generated fruit: NORMAL at position [50, 168]
+Episode: 133/500, Score: 0, Reward: -9.68, Epsilon: 0.33
+Generated fruit: SPECIAL at position [550, 278]
+Episode: 134/500, Score: 0, Reward: -10.01, Epsilon: 0.32
+Generated fruit: NORMAL at position [380, 358]
+Episode: 135/500, Score: 0, Reward: -10.00, Epsilon: 0.32
+Generated fruit: SPECIAL at position [190, 148]
+Episode: 136/500, Score: 0, Reward: -9.95, Epsilon: 0.32
+Updated target model at episode 136
+Generated fruit: GOLDEN at position [230, 168]
+Episode: 137/500, Score: 0, Reward: -9.82, Epsilon: 0.31
+Generated fruit: NORMAL at position [570, 208]
+Episode: 138/500, Score: 0, Reward: -9.34, Epsilon: 0.31
+Generated fruit: NORMAL at position [270, 288]
+Episode: 139/500, Score: 0, Reward: -8.24, Epsilon: 0.31
+Generated fruit: NORMAL at position [80, 138]
+Episode: 140/500, Score: 0, Reward: -9.92, Epsilon: 0.31
+Generated fruit: NORMAL at position [110, 338]
+Episode: 141/500, Score: 0, Reward: -7.83, Epsilon: 0.30
+Updated target model at episode 141
+Generated fruit: NORMAL at position [340, 108]
+Episode: 142/500, Score: 0, Reward: -10.11, Epsilon: 0.30
+Generated fruit: NORMAL at position [90, 248]
+Episode: 143/500, Score: 0, Reward: -8.92, Epsilon: 0.30
+Generated fruit: SPECIAL at position [550, 88]
+Episode: 144/500, Score: 0, Reward: -9.50, Epsilon: 0.29
+Generated fruit: NORMAL at position [280, 208]
+Episode: 145/500, Score: 0, Reward: -9.21, Epsilon: 0.29
+Generated fruit: SPECIAL at position [160, 208]
+Episode: 146/500, Score: 0, Reward: -9.71, Epsilon: 0.29
+Updated target model at episode 146
+Generated fruit: NORMAL at position [180, 228]
+Episode: 147/500, Score: 0, Reward: -9.30, Epsilon: 0.28
+Generated fruit: NORMAL at position [80, 228]
+Episode: 148/500, Score: 0, Reward: -9.07, Epsilon: 0.28
+Generated fruit: NORMAL at position [560, 198]
+Episode: 149/500, Score: 0, Reward: -9.58, Epsilon: 0.28
+Generated fruit: SPECIAL at position [290, 338]
+Episode: 150/500, Score: 0, Reward: -8.22, Epsilon: 0.28
+Generated fruit: NORMAL at position [260, 238]
+Episode: 151/500, Score: 0, Reward: -8.92, Epsilon: 0.27
+Updated target model at episode 151
+Generated fruit: NORMAL at position [350, 228]
+Episode: 152/500, Score: 0, Reward: -9.90, Epsilon: 0.27
+Generated fruit: NORMAL at position [490, 328]
+Episode: 153/500, Score: 0, Reward: -8.06, Epsilon: 0.27
+Generated fruit: NORMAL at position [350, 58]
+Episode: 154/500, Score: 0, Reward: -10.06, Epsilon: 0.27
+Generated fruit: NORMAL at position [310, 368]
+Episode: 155/500, Score: 0, Reward: -9.40, Epsilon: 0.26
+Generated fruit: NORMAL at position [120, 378]
+Episode: 156/500, Score: 0, Reward: -9.10, Epsilon: 0.26
+Updated target model at episode 156
+Generated fruit: NORMAL at position [260, 128]
+Episode: 157/500, Score: 0, Reward: -10.15, Epsilon: 0.26
+Generated fruit: NORMAL at position [170, 258]
+Episode: 158/500, Score: 0, Reward: -9.80, Epsilon: 0.25
+Generated fruit: NORMAL at position [180, 308]
+Episode: 159/500, Score: 0, Reward: -10.02, Epsilon: 0.25
+Generated fruit: NORMAL at position [150, 388]
+Episode: 160/500, Score: 0, Reward: -7.73, Epsilon: 0.25
+Generated fruit: NORMAL at position [320, 338]
+Episode: 161/500, Score: 0, Reward: -8.23, Epsilon: 0.25
+Updated target model at episode 161
+Generated fruit: SPECIAL at position [300, 118]
+Episode: 162/500, Score: 0, Reward: -10.13, Epsilon: 0.24
+Generated fruit: NORMAL at position [220, 168]
+Episode: 163/500, Score: 0, Reward: -10.12, Epsilon: 0.24
+Generated fruit: NORMAL at position [540, 148]
+Episode: 164/500, Score: 0, Reward: -10.00, Epsilon: 0.24
+Generated fruit: NORMAL at position [420, 298]
+Episode: 165/500, Score: 0, Reward: -8.41, Epsilon: 0.24
+Generated fruit: NORMAL at position [350, 368]
+Episode: 166/500, Score: 0, Reward: -7.70, Epsilon: 0.24
+Updated target model at episode 166
+Generated fruit: NORMAL at position [420, 178]
+Episode: 167/500, Score: 0, Reward: -9.71, Epsilon: 0.23
+Generated fruit: NORMAL at position [160, 78]
+Episode: 168/500, Score: 0, Reward: -10.01, Epsilon: 0.23
+Generated fruit: NORMAL at position [420, 278]
+Episode: 169/500, Score: 0, Reward: -8.85, Epsilon: 0.23
+Generated fruit: NORMAL at position [0, 238]
+Episode: 170/500, Score: 0, Reward: -10.05, Epsilon: 0.23
+Generated fruit: NORMAL at position [170, 328]
+Episode: 171/500, Score: 0, Reward: -10.01, Epsilon: 0.22
+Updated target model at episode 171
+Generated fruit: NORMAL at position [500, 388]
+Episode: 172/500, Score: 0, Reward: -9.90, Epsilon: 0.22
+Generated fruit: NORMAL at position [50, 68]
+Episode: 173/500, Score: 0, Reward: -10.04, Epsilon: 0.22
+Generated fruit: NORMAL at position [270, 68]
+Episode: 174/500, Score: 0, Reward: -9.85, Epsilon: 0.22
+Generated fruit: NORMAL at position [460, 278]
+Episode: 175/500, Score: 0, Reward: -8.64, Epsilon: 0.21
+Generated fruit: NORMAL at position [60, 388]
+Episode: 176/500, Score: 0, Reward: -10.10, Epsilon: 0.21
+Updated target model at episode 176
+Generated fruit: NORMAL at position [100, 338]
+Episode: 177/500, Score: 0, Reward: -10.02, Epsilon: 0.21
+Generated fruit: NORMAL at position [180, 228]
+Episode: 178/500, Score: 0, Reward: -10.24, Epsilon: 0.21
+Generated fruit: NORMAL at position [100, 148]
+Episode: 179/500, Score: 0, Reward: -10.08, Epsilon: 0.21
+Generated fruit: NORMAL at position [310, 308]
+Episode: 180/500, Score: 0, Reward: -9.70, Epsilon: 0.20
+Generated fruit: NORMAL at position [400, 58]
+Episode: 181/500, Score: 0, Reward: -10.14, Epsilon: 0.20
+Updated target model at episode 181
+Generated fruit: NORMAL at position [90, 138]
+Episode: 182/500, Score: 0, Reward: -10.02, Epsilon: 0.20
+Generated fruit: NORMAL at position [450, 148]
+Episode: 183/500, Score: 0, Reward: -10.10, Epsilon: 0.20
+Generated fruit: NORMAL at position [240, 198]
+Episode: 184/500, Score: 0, Reward: -10.08, Epsilon: 0.20
+Generated fruit: SPECIAL at position [60, 278]
+Episode: 185/500, Score: 0, Reward: -10.00, Epsilon: 0.19
+Generated fruit: SPECIAL at position [410, 288]
+Episode: 186/500, Score: 0, Reward: -8.67, Epsilon: 0.19
+Updated target model at episode 186
+Generated fruit: NORMAL at position [140, 168]
+Episode: 187/500, Score: 0, Reward: -10.08, Epsilon: 0.19
+Generated fruit: NORMAL at position [20, 58]
+Episode: 188/500, Score: 0, Reward: -10.06, Epsilon: 0.19
+Generated fruit: NORMAL at position [460, 128]
+Episode: 189/500, Score: 0, Reward: -10.00, Epsilon: 0.19
+Generated fruit: NORMAL at position [200, 58]
+Episode: 190/500, Score: 0, Reward: -10.05, Epsilon: 0.18
+Generated fruit: NORMAL at position [470, 218]
+Episode: 191/500, Score: 0, Reward: -9.14, Epsilon: 0.18
+Updated target model at episode 191
+Generated fruit: SPECIAL at position [440, 248]
+Episode: 192/500, Score: 0, Reward: -9.10, Epsilon: 0.18
+Generated fruit: NORMAL at position [290, 248]
+Episode: 193/500, Score: 0, Reward: -10.11, Epsilon: 0.18
+Generated fruit: SPECIAL at position [60, 158]
+Episode: 194/500, Score: 0, Reward: -10.09, Epsilon: 0.18
+Generated fruit: SPECIAL at position [520, 348]
+Episode: 195/500, Score: 0, Reward: -8.21, Epsilon: 0.18
+Generated fruit: NORMAL at position [490, 178]
+Episode: 196/500, Score: 0, Reward: -9.81, Epsilon: 0.17
+Updated target model at episode 196
+Generated fruit: NORMAL at position [580, 38]
+Episode: 197/500, Score: 0, Reward: -9.13, Epsilon: 0.17
+Generated fruit: NORMAL at position [110, 128]
+Episode: 198/500, Score: 0, Reward: -10.30, Epsilon: 0.17
+Generated fruit: NORMAL at position [560, 208]
+Episode: 199/500, Score: 0, Reward: -9.36, Epsilon: 0.17
+Generated fruit: NORMAL at position [200, 268]
+Episode: 200/500, Score: 0, Reward: -10.00, Epsilon: 0.17
+Generated fruit: SPECIAL at position [260, 198]
+Episode: 201/500, Score: 0, Reward: -10.00, Epsilon: 0.17
+Updated target model at episode 201
+Generated fruit: NORMAL at position [0, 368]
+Episode: 202/500, Score: 0, Reward: -7.67, Epsilon: 0.16
+Generated fruit: SPECIAL at position [520, 308]
+Episode: 203/500, Score: 0, Reward: -9.30, Epsilon: 0.16
+Generated fruit: SPECIAL at position [320, 338]
+Episode: 204/500, Score: 0, Reward: -10.00, Epsilon: 0.16
+Generated fruit: NORMAL at position [390, 208]
+Episode: 205/500, Score: 0, Reward: -9.40, Epsilon: 0.16
+Generated fruit: NORMAL at position [160, 268]
+Episode: 206/500, Score: 0, Reward: -8.93, Epsilon: 0.16
+Updated target model at episode 206
+Generated fruit: SPECIAL at position [460, 38]
+Episode: 207/500, Score: 0, Reward: -9.95, Epsilon: 0.16
+Generated fruit: NORMAL at position [510, 88]
+Episode: 208/500, Score: 0, Reward: -9.96, Epsilon: 0.15
+Generated fruit: NORMAL at position [380, 298]
+Episode: 209/500, Score: 0, Reward: -8.43, Epsilon: 0.15
+Generated fruit: NORMAL at position [480, 208]
+Episode: 210/500, Score: 0, Reward: -9.50, Epsilon: 0.15
+Generated fruit: NORMAL at position [570, 338]
+Episode: 211/500, Score: 0, Reward: -8.08, Epsilon: 0.15
+Updated target model at episode 211
+Generated fruit: NORMAL at position [300, 138]
+Episode: 212/500, Score: 0, Reward: -9.86, Epsilon: 0.15
+Generated fruit: NORMAL at position [230, 188]
+Episode: 213/500, Score: 0, Reward: -10.03, Epsilon: 0.15
+Generated fruit: SPECIAL at position [520, 68]
+Episode: 214/500, Score: 0, Reward: -10.10, Epsilon: 0.15
+Generated fruit: NORMAL at position [160, 278]
+Episode: 215/500, Score: 0, Reward: -9.06, Epsilon: 0.14
+Generated fruit: NORMAL at position [540, 228]
+Episode: 216/500, Score: 0, Reward: -8.91, Epsilon: 0.14
+Updated target model at episode 216
+Generated fruit: NORMAL at position [290, 218]
+Episode: 217/500, Score: 0, Reward: -10.26, Epsilon: 0.14
+Generated fruit: NORMAL at position [390, 368]
+Episode: 218/500, Score: 0, Reward: -8.30, Epsilon: 0.14
+Generated fruit: NORMAL at position [10, 268]
+Episode: 219/500, Score: 0, Reward: -8.91, Epsilon: 0.14
+Generated fruit: NORMAL at position [100, 298]
+Episode: 220/500, Score: 0, Reward: -10.00, Epsilon: 0.14
+Generated fruit: NORMAL at position [130, 208]
+Episode: 221/500, Score: 0, Reward: -9.70, Epsilon: 0.14
+Updated target model at episode 221
+Generated fruit: NORMAL at position [500, 198]
+Episode: 222/500, Score: 0, Reward: -9.90, Epsilon: 0.13
+Generated fruit: NORMAL at position [10, 68]
+Episode: 223/500, Score: 0, Reward: -10.17, Epsilon: 0.13
+Generated fruit: SPECIAL at position [300, 98]
+Episode: 224/500, Score: 0, Reward: -10.31, Epsilon: 0.13
+Generated fruit: NORMAL at position [70, 278]
+Episode: 225/500, Score: 0, Reward: -8.79, Epsilon: 0.13
+Generated fruit: NORMAL at position [380, 178]
+Episode: 226/500, Score: 0, Reward: -9.16, Epsilon: 0.13
+Updated target model at episode 226
+Generated fruit: NORMAL at position [560, 48]
+Episode: 227/500, Score: 0, Reward: -9.30, Epsilon: 0.13
+Generated fruit: NORMAL at position [70, 308]
+Episode: 228/500, Score: 0, Reward: -9.41, Epsilon: 0.13
+Generated fruit: NORMAL at position [450, 298]
+Episode: 229/500, Score: 0, Reward: -7.44, Epsilon: 0.12
+Generated fruit: NORMAL at position [230, 148]
+Episode: 230/500, Score: 0, Reward: -10.01, Epsilon: 0.12
+Generated fruit: NORMAL at position [140, 328]
+Episode: 231/500, Score: 0, Reward: -10.06, Epsilon: 0.12
+Updated target model at episode 231
+Generated fruit: NORMAL at position [580, 328]
+Episode: 232/500, Score: 0, Reward: -7.23, Epsilon: 0.12
+Generated fruit: NORMAL at position [170, 368]
+Episode: 233/500, Score: 0, Reward: -9.13, Epsilon: 0.12
+Generated fruit: NORMAL at position [50, 268]
+Episode: 234/500, Score: 0, Reward: -9.11, Epsilon: 0.12
+Generated fruit: NORMAL at position [580, 358]
+Episode: 235/500, Score: 0, Reward: -8.30, Epsilon: 0.12
+Generated fruit: SPECIAL at position [540, 248]
+Episode: 236/500, Score: 0, Reward: -8.94, Epsilon: 0.12
+Updated target model at episode 236
+Generated fruit: NORMAL at position [510, 198]
+Episode: 237/500, Score: 0, Reward: -8.70, Epsilon: 0.12
+Generated fruit: NORMAL at position [180, 388]
+Episode: 238/500, Score: 0, Reward: -7.73, Epsilon: 0.11
+Generated fruit: NORMAL at position [330, 68]
+Episode: 239/500, Score: 0, Reward: -9.92, Epsilon: 0.11
+Generated fruit: NORMAL at position [210, 68]
+Episode: 240/500, Score: 0, Reward: -10.35, Epsilon: 0.11
+Generated fruit: NORMAL at position [180, 388]
+Episode: 241/500, Score: 0, Reward: -9.40, Epsilon: 0.11
+Updated target model at episode 241
+Generated fruit: NORMAL at position [60, 208]
+Episode: 242/500, Score: 0, Reward: -9.70, Epsilon: 0.11
+Generated fruit: NORMAL at position [400, 118]
+Episode: 243/500, Score: 0, Reward: -9.30, Epsilon: 0.11
+Generated fruit: NORMAL at position [140, 118]
+Episode: 244/500, Score: 0, Reward: -10.40, Epsilon: 0.11
+Generated fruit: NORMAL at position [40, 158]
+Episode: 245/500, Score: 0, Reward: -10.03, Epsilon: 0.11
+Generated fruit: NORMAL at position [420, 278]
+Episode: 246/500, Score: 0, Reward: -8.72, Epsilon: 0.11
+Updated target model at episode 246
+Generated fruit: NORMAL at position [50, 298]
+Episode: 247/500, Score: 0, Reward: -9.30, Epsilon: 0.10
+Generated fruit: NORMAL at position [370, 308]
+Episode: 248/500, Score: 0, Reward: -8.46, Epsilon: 0.10
+Generated fruit: NORMAL at position [560, 268]
+Episode: 249/500, Score: 0, Reward: -8.41, Epsilon: 0.10
+Generated fruit: NORMAL at position [490, 338]
+Episode: 250/500, Score: 0, Reward: -7.40, Epsilon: 0.10
+Generated fruit: NORMAL at position [560, 388]
+Episode: 251/500, Score: 0, Reward: -5.71, Epsilon: 0.10
+Updated target model at episode 251
+Generated fruit: NORMAL at position [550, 118]
+Episode: 252/500, Score: 0, Reward: -7.57, Epsilon: 0.10
+Generated fruit: NORMAL at position [380, 118]
+Episode: 253/500, Score: 0, Reward: -9.49, Epsilon: 0.10
+Generated fruit: NORMAL at position [0, 388]
+Episode: 254/500, Score: 0, Reward: -9.80, Epsilon: 0.10
+Generated fruit: NORMAL at position [180, 238]
+Episode: 255/500, Score: 0, Reward: -9.31, Epsilon: 0.10
+Generated fruit: NORMAL at position [360, 388]
+Episode: 256/500, Score: 0, Reward: -7.52, Epsilon: 0.10
+Updated target model at episode 256
+Generated fruit: SPECIAL at position [410, 108]
+Episode: 257/500, Score: 0, Reward: -8.70, Epsilon: 0.09
+Generated fruit: NORMAL at position [550, 218]
+Episode: 258/500, Score: 0, Reward: -9.42, Epsilon: 0.09
+Generated fruit: NORMAL at position [100, 178]
+Episode: 259/500, Score: 0, Reward: -9.91, Epsilon: 0.09
+Generated fruit: SPECIAL at position [0, 178]
+Episode: 260/500, Score: 0, Reward: -9.96, Epsilon: 0.09
+Generated fruit: NORMAL at position [480, 348]
+Episode: 261/500, Score: 0, Reward: -8.05, Epsilon: 0.09
+Updated target model at episode 261
+Generated fruit: NORMAL at position [410, 238]
+Episode: 262/500, Score: 0, Reward: -8.67, Epsilon: 0.09
+Generated fruit: NORMAL at position [80, 208]
+Episode: 263/500, Score: 0, Reward: -9.71, Epsilon: 0.09
+Generated fruit: NORMAL at position [30, 138]
+Episode: 264/500, Score: 0, Reward: -10.38, Epsilon: 0.09
+Generated fruit: NORMAL at position [250, 378]
+Episode: 265/500, Score: 0, Reward: -7.39, Epsilon: 0.09
+Generated fruit: NORMAL at position [310, 198]
+Episode: 266/500, Score: 0, Reward: -9.89, Epsilon: 0.09
+Updated target model at episode 266
+Generated fruit: NORMAL at position [510, 168]
+Episode: 267/500, Score: 0, Reward: -7.92, Epsilon: 0.09
+Generated fruit: NORMAL at position [190, 148]
+Episode: 268/500, Score: 0, Reward: -10.28, Epsilon: 0.08
+Generated fruit: NORMAL at position [100, 368]
+Episode: 269/500, Score: 0, Reward: -7.79, Epsilon: 0.08
+Generated fruit: SPECIAL at position [0, 308]
+Episode: 270/500, Score: 0, Reward: -8.44, Epsilon: 0.08
+Generated fruit: NORMAL at position [200, 258]
+Episode: 271/500, Score: 0, Reward: -9.02, Epsilon: 0.08
+Updated target model at episode 271
+Generated fruit: NORMAL at position [390, 108]
+Episode: 272/500, Score: 0, Reward: -9.31, Epsilon: 0.08
+Generated fruit: NORMAL at position [130, 108]
+Episode: 273/500, Score: 0, Reward: -10.34, Epsilon: 0.08
+Generated fruit: NORMAL at position [160, 48]
+Episode: 274/500, Score: 0, Reward: -10.09, Epsilon: 0.08
+Generated fruit: NORMAL at position [180, 148]
+Episode: 275/500, Score: 0, Reward: -10.01, Epsilon: 0.08
+Generated fruit: NORMAL at position [400, 98]
+Episode: 276/500, Score: 0, Reward: -9.08, Epsilon: 0.08
+Updated target model at episode 276
+Generated fruit: SPECIAL at position [570, 58]
+Episode: 277/500, Score: 0, Reward: -7.18, Epsilon: 0.08
+Generated fruit: NORMAL at position [230, 328]
+Episode: 278/500, Score: 0, Reward: -9.10, Epsilon: 0.08
+Generated fruit: NORMAL at position [410, 318]
+Episode: 279/500, Score: 0, Reward: -8.39, Epsilon: 0.08
+Generated fruit: NORMAL at position [130, 308]
+Episode: 280/500, Score: 0, Reward: -8.26, Epsilon: 0.07
+Generated fruit: NORMAL at position [540, 358]
+Episode: 281/500, Score: 0, Reward: -7.78, Epsilon: 0.07
+Updated target model at episode 281
+Generated fruit: NORMAL at position [200, 228]
+Episode: 282/500, Score: 0, Reward: -9.43, Epsilon: 0.07
+Generated fruit: NORMAL at position [250, 118]
+Episode: 283/500, Score: 0, Reward: -9.48, Epsilon: 0.07
+Generated fruit: NORMAL at position [50, 98]
+Episode: 284/500, Score: 0, Reward: -10.15, Epsilon: 0.07
+Generated fruit: SPECIAL at position [210, 188]
+Episode: 285/500, Score: 0, Reward: -9.72, Epsilon: 0.07
+Generated fruit: NORMAL at position [550, 248]
+Episode: 286/500, Score: 0, Reward: -8.60, Epsilon: 0.07
+Updated target model at episode 286
+Generated fruit: NORMAL at position [410, 98]
+Episode: 287/500, Score: 0, Reward: -9.01, Epsilon: 0.07
+Generated fruit: NORMAL at position [280, 138]
+Episode: 288/500, Score: 0, Reward: -10.13, Epsilon: 0.07
+Generated fruit: SPECIAL at position [320, 288]
+Episode: 289/500, Score: 0, Reward: -8.72, Epsilon: 0.07
+Generated fruit: NORMAL at position [440, 298]
+Episode: 290/500, Score: 0, Reward: -8.70, Epsilon: 0.07
+Generated fruit: NORMAL at position [460, 78]
+Episode: 291/500, Score: 0, Reward: -8.45, Epsilon: 0.07
+Updated target model at episode 291
+Generated fruit: NORMAL at position [260, 368]
+Episode: 292/500, Score: 0, Reward: -9.30, Epsilon: 0.07
+Generated fruit: NORMAL at position [340, 238]
+Episode: 293/500, Score: 0, Reward: -9.37, Epsilon: 0.07
+Generated fruit: NORMAL at position [500, 238]
+Episode: 294/500, Score: 0, Reward: -9.20, Epsilon: 0.06
+Generated fruit: NORMAL at position [10, 248]
+Episode: 295/500, Score: 0, Reward: -8.54, Epsilon: 0.06
+Generated fruit: NORMAL at position [180, 128]
+Episode: 296/500, Score: 0, Reward: -9.22, Epsilon: 0.06
+Updated target model at episode 296
+Generated fruit: NORMAL at position [400, 228]
+Episode: 297/500, Score: 0, Reward: -9.61, Epsilon: 0.06
+Generated fruit: NORMAL at position [30, 58]
+Episode: 298/500, Score: 0, Reward: -9.29, Epsilon: 0.06
+Generated fruit: NORMAL at position [340, 118]
+Episode: 299/500, Score: 0, Reward: -10.03, Epsilon: 0.06
+Generated fruit: NORMAL at position [420, 238]
+Episode: 300/500, Score: 0, Reward: -9.20, Epsilon: 0.06
+Generated fruit: NORMAL at position [380, 198]
+Episode: 301/500, Score: 0, Reward: -9.99, Epsilon: 0.06
+Updated target model at episode 301
+Generated fruit: NORMAL at position [340, 48]
+Episode: 302/500, Score: 0, Reward: -10.45, Epsilon: 0.06
+Generated fruit: SPECIAL at position [420, 128]
+Episode: 303/500, Score: 0, Reward: -9.27, Epsilon: 0.06
+Generated fruit: NORMAL at position [310, 58]
+Episode: 304/500, Score: 0, Reward: -10.47, Epsilon: 0.06
+Generated fruit: NORMAL at position [470, 168]
+Episode: 305/500, Score: 0, Reward: -9.92, Epsilon: 0.06
+Generated fruit: NORMAL at position [450, 368]
+Episode: 306/500, Score: 0, Reward: -7.53, Epsilon: 0.06
+Updated target model at episode 306
+Generated fruit: NORMAL at position [570, 228]
+Episode: 307/500, Score: 0, Reward: -7.92, Epsilon: 0.06
+Generated fruit: NORMAL at position [220, 168]
+Episode: 308/500, Score: 0, Reward: -8.72, Epsilon: 0.06
+Generated fruit: NORMAL at position [50, 268]
+Episode: 309/500, Score: 0, Reward: -8.47, Epsilon: 0.06
+Generated fruit: NORMAL at position [210, 338]
+Episode: 310/500, Score: 0, Reward: -9.41, Epsilon: 0.06
+Generated fruit: SPECIAL at position [170, 208]
+Episode: 311/500, Score: 0, Reward: -7.37, Epsilon: 0.05
+Updated target model at episode 311
+Generated fruit: NORMAL at position [420, 88]
+Episode: 312/500, Score: 0, Reward: -8.87, Epsilon: 0.05
+Generated fruit: NORMAL at position [10, 338]
+Episode: 313/500, Score: 0, Reward: -3.19, Epsilon: 0.05
+Generated fruit: NORMAL at position [570, 358]
+Episode: 314/500, Score: 0, Reward: -3.14, Epsilon: 0.05
+Generated fruit: SPECIAL at position [230, 228]
+Episode: 315/500, Score: 0, Reward: -9.19, Epsilon: 0.05
+Generated fruit: SPECIAL at position [300, 98]
+Episode: 316/500, Score: 0, Reward: -9.91, Epsilon: 0.05
+Updated target model at episode 316
+Generated fruit: NORMAL at position [420, 388]
+Episode: 317/500, Score: 0, Reward: -7.30, Epsilon: 0.05
+Generated fruit: NORMAL at position [40, 338]
+Episode: 318/500, Score: 0, Reward: -4.40, Epsilon: 0.05
+Generated fruit: NORMAL at position [500, 288]
+Episode: 319/500, Score: 0, Reward: -6.49, Epsilon: 0.05
+Generated fruit: NORMAL at position [210, 118]
+Episode: 320/500, Score: 0, Reward: -10.12, Epsilon: 0.05
+Generated fruit: NORMAL at position [360, 328]
+Episode: 321/500, Score: 0, Reward: -7.86, Epsilon: 0.05
+Updated target model at episode 321
+Generated fruit: NORMAL at position [250, 328]
+Episode: 322/500, Score: 0, Reward: -6.15, Epsilon: 0.05
+Generated fruit: NORMAL at position [410, 48]
+Episode: 323/500, Score: 0, Reward: -9.64, Epsilon: 0.05
+Generated fruit: NORMAL at position [440, 238]
+Episode: 324/500, Score: 0, Reward: -8.46, Epsilon: 0.05
+Generated fruit: NORMAL at position [520, 238]
+Episode: 325/500, Score: 0, Reward: -0.84, Epsilon: 0.05
+Generated fruit: SPECIAL at position [160, 378]
+Episode: 326/500, Score: 0, Reward: -4.52, Epsilon: 0.05
+Updated target model at episode 326
+Generated fruit: NORMAL at position [180, 318]
+Episode: 327/500, Score: 0, Reward: -9.80, Epsilon: 0.05
+Generated fruit: NORMAL at position [90, 258]
+Episode: 328/500, Score: 0, Reward: -7.99, Epsilon: 0.05
+Generated fruit: SPECIAL at position [90, 98]
+Episode: 329/500, Score: 0, Reward: -8.99, Epsilon: 0.05
+Generated fruit: NORMAL at position [300, 218]
+Episode: 330/500, Score: 0, Reward: -8.97, Epsilon: 0.05
+Generated fruit: NORMAL at position [30, 378]
+Episode: 331/500, Score: 0, Reward: -6.49, Epsilon: 0.04
+Updated target model at episode 331
+Generated fruit: SPECIAL at position [340, 68]
+Episode: 332/500, Score: 0, Reward: -9.56, Epsilon: 0.04
+Generated fruit: NORMAL at position [290, 98]
+Episode: 333/500, Score: 0, Reward: -10.00, Epsilon: 0.04
+Generated fruit: NORMAL at position [200, 128]
+Episode: 334/500, Score: 0, Reward: -8.59, Epsilon: 0.04
+Generated fruit: NORMAL at position [190, 338]
+Episode: 335/500, Score: 0, Reward: -8.58, Epsilon: 0.04
+Generated fruit: NORMAL at position [570, 78]
+Episode: 336/500, Score: 0, Reward: -7.11, Epsilon: 0.04
+Updated target model at episode 336
+Generated fruit: NORMAL at position [250, 348]
+Episode: 337/500, Score: 0, Reward: -9.91, Epsilon: 0.04
+Generated fruit: NORMAL at position [570, 158]
+Episode: 338/500, Score: 0, Reward: -7.07, Epsilon: 0.04
+Generated fruit: NORMAL at position [340, 198]
+Generated fruit: NORMAL at position [230, 208]
+Episode: 339/500, Score: 1, Reward: -4.39, Epsilon: 0.04
+Generated fruit: NORMAL at position [440, 238]
+Episode: 340/500, Score: 0, Reward: -5.13, Epsilon: 0.04
+Generated fruit: NORMAL at position [260, 48]
+Episode: 341/500, Score: 0, Reward: -10.20, Epsilon: 0.04
+Updated target model at episode 341
+Generated fruit: NORMAL at position [70, 158]
+Episode: 342/500, Score: 0, Reward: -7.70, Epsilon: 0.04
+Generated fruit: NORMAL at position [470, 78]
+Episode: 343/500, Score: 0, Reward: -8.47, Epsilon: 0.04
+Generated fruit: NORMAL at position [70, 138]
+Episode: 344/500, Score: 0, Reward: -10.17, Epsilon: 0.04
+Generated fruit: NORMAL at position [200, 378]
+Episode: 345/500, Score: 0, Reward: -7.51, Epsilon: 0.04
+Generated fruit: NORMAL at position [40, 168]
+Episode: 346/500, Score: 0, Reward: -9.84, Epsilon: 0.04
+Updated target model at episode 346
+Generated fruit: SPECIAL at position [150, 338]
+Episode: 347/500, Score: 0, Reward: -5.93, Epsilon: 0.04
+Generated fruit: NORMAL at position [170, 258]
+Episode: 348/500, Score: 0, Reward: -5.92, Epsilon: 0.04
+Generated fruit: SPECIAL at position [170, 158]
+Episode: 349/500, Score: 0, Reward: -9.86, Epsilon: 0.04
+Generated fruit: NORMAL at position [70, 288]
+Episode: 350/500, Score: 0, Reward: -8.19, Epsilon: 0.04
+Generated fruit: NORMAL at position [110, 128]
+Episode: 351/500, Score: 0, Reward: -9.49, Epsilon: 0.04
+Updated target model at episode 351
+Generated fruit: NORMAL at position [460, 38]
+Episode: 352/500, Score: 0, Reward: -8.37, Epsilon: 0.04
+Generated fruit: NORMAL at position [370, 338]
+Episode: 353/500, Score: 0, Reward: -8.70, Epsilon: 0.04
+Generated fruit: NORMAL at position [430, 288]
+Episode: 354/500, Score: 0, Reward: -7.70, Epsilon: 0.04
+Generated fruit: NORMAL at position [450, 338]
+Episode: 355/500, Score: 0, Reward: -7.60, Epsilon: 0.04
+Generated fruit: NORMAL at position [120, 118]
+Episode: 356/500, Score: 0, Reward: -8.09, Epsilon: 0.03
+Updated target model at episode 356
+Generated fruit: NORMAL at position [20, 48]
+Episode: 357/500, Score: 0, Reward: -7.50, Epsilon: 0.03
+Generated fruit: NORMAL at position [570, 208]
+Episode: 358/500, Score: 0, Reward: -8.20, Epsilon: 0.03
+Generated fruit: NORMAL at position [230, 138]
+Episode: 359/500, Score: 0, Reward: -10.03, Epsilon: 0.03
+Generated fruit: NORMAL at position [140, 88]
+Episode: 360/500, Score: 0, Reward: -10.10, Epsilon: 0.03
+Generated fruit: GOLDEN at position [480, 218]
+Episode: 361/500, Score: 0, Reward: -8.53, Epsilon: 0.03
+Updated target model at episode 361
+Generated fruit: NORMAL at position [170, 58]
+Episode: 362/500, Score: 0, Reward: -8.15, Epsilon: 0.03
+Generated fruit: SPECIAL at position [350, 258]
+Generated fruit: NORMAL at position [510, 378]
+Episode: 363/500, Score: 0, Reward: -6.09, Epsilon: 0.03
+Generated fruit: NORMAL at position [410, 128]
+Episode: 364/500, Score: 0, Reward: -7.54, Epsilon: 0.03
+Generated fruit: SPECIAL at position [30, 218]
+Episode: 365/500, Score: 0, Reward: -10.00, Epsilon: 0.03
+Generated fruit: NORMAL at position [50, 208]
+Episode: 366/500, Score: 0, Reward: -8.79, Epsilon: 0.03
+Updated target model at episode 366
+Generated fruit: SPECIAL at position [160, 38]
+Episode: 367/500, Score: 0, Reward: -7.84, Epsilon: 0.03
+Generated fruit: NORMAL at position [60, 298]
+Episode: 368/500, Score: 0, Reward: 1.89, Epsilon: 0.03
+Generated fruit: NORMAL at position [170, 368]
+Episode: 369/500, Score: 0, Reward: -5.33, Epsilon: 0.03
+Generated fruit: NORMAL at position [190, 188]
+Episode: 370/500, Score: 0, Reward: -8.77, Epsilon: 0.03
+Generated fruit: SPECIAL at position [530, 208]
+Episode: 371/500, Score: 0, Reward: -6.28, Epsilon: 0.03
+Updated target model at episode 371
+Generated fruit: NORMAL at position [360, 38]
+Episode: 372/500, Score: 0, Reward: 1.21, Epsilon: 0.03
+Generated fruit: NORMAL at position [120, 368]
+Episode: 373/500, Score: 0, Reward: -6.90, Epsilon: 0.03
+Generated fruit: NORMAL at position [330, 378]
+Episode: 374/500, Score: 0, Reward: -4.96, Epsilon: 0.03
+Generated fruit: NORMAL at position [580, 328]
+Episode: 375/500, Score: 0, Reward: -2.62, Epsilon: 0.03
+Generated fruit: NORMAL at position [490, 348]
+Episode: 376/500, Score: 0, Reward: -7.12, Epsilon: 0.03
+Updated target model at episode 376
+Generated fruit: NORMAL at position [270, 148]
+Episode: 377/500, Score: 0, Reward: -9.59, Epsilon: 0.03
+Generated fruit: NORMAL at position [30, 128]
+Episode: 378/500, Score: 0, Reward: -3.45, Epsilon: 0.03
+Generated fruit: NORMAL at position [440, 48]
+Episode: 379/500, Score: 0, Reward: 2.83, Epsilon: 0.03
+Generated fruit: NORMAL at position [520, 338]
+Episode: 380/500, Score: 0, Reward: -5.21, Epsilon: 0.03
+Generated fruit: NORMAL at position [170, 248]
+Episode: 381/500, Score: 0, Reward: -9.20, Epsilon: 0.03
+Updated target model at episode 381
+Generated fruit: NORMAL at position [350, 118]
+Episode: 382/500, Score: 0, Reward: -9.74, Epsilon: 0.03
+Generated fruit: NORMAL at position [570, 58]
+Episode: 383/500, Score: 0, Reward: -7.05, Epsilon: 0.03
+Generated fruit: NORMAL at position [80, 98]
+Episode: 384/500, Score: 0, Reward: -0.04, Epsilon: 0.03
+Generated fruit: NORMAL at position [380, 158]
+Episode: 385/500, Score: 0, Reward: -6.91, Epsilon: 0.03
+Generated fruit: NORMAL at position [410, 388]
+Episode: 386/500, Score: 0, Reward: 9.94, Epsilon: 0.03
+Updated target model at episode 386
+Generated fruit: NORMAL at position [250, 238]
+Episode: 387/500, Score: 0, Reward: -9.26, Epsilon: 0.03
+Generated fruit: NORMAL at position [260, 148]
+Episode: 388/500, Score: 0, Reward: -5.51, Epsilon: 0.03
+Generated fruit: NORMAL at position [70, 328]
+Episode: 389/500, Score: 0, Reward: -0.73, Epsilon: 0.03
+Generated fruit: NORMAL at position [330, 188]
+Episode: 390/500, Score: 0, Reward: -8.42, Epsilon: 0.02
+Generated fruit: NORMAL at position [310, 168]
+Episode: 391/500, Score: 0, Reward: -9.79, Epsilon: 0.02
+Updated target model at episode 391
+Generated fruit: NORMAL at position [320, 238]
+Generated fruit: NORMAL at position [260, 378]
+Episode: 392/500, Score: 1, Reward: -2.55, Epsilon: 0.02
+Generated fruit: NORMAL at position [110, 38]
+Episode: 393/500, Score: 0, Reward: -6.94, Epsilon: 0.02
+Generated fruit: NORMAL at position [10, 38]
+Episode: 394/500, Score: 0, Reward: -10.37, Epsilon: 0.02
+Generated fruit: NORMAL at position [160, 298]
+Episode: 395/500, Score: 0, Reward: -3.96, Epsilon: 0.02
+Generated fruit: NORMAL at position [360, 198]
+Generated fruit: NORMAL at position [290, 168]
+Episode: 396/500, Score: 1, Reward: -4.27, Epsilon: 0.02
+Updated target model at episode 396
+Generated fruit: NORMAL at position [210, 78]
+Episode: 397/500, Score: 0, Reward: -10.08, Epsilon: 0.02
+Generated fruit: NORMAL at position [210, 368]
+Episode: 398/500, Score: 0, Reward: -4.88, Epsilon: 0.02
+Generated fruit: NORMAL at position [100, 388]
+Episode: 399/500, Score: 0, Reward: -3.30, Epsilon: 0.02
+Generated fruit: NORMAL at position [240, 168]
+Episode: 400/500, Score: 0, Reward: -6.25, Epsilon: 0.02
+Generated fruit: NORMAL at position [310, 38]
+Episode: 401/500, Score: 0, Reward: -7.55, Epsilon: 0.02
+Updated target model at episode 401
+Generated fruit: NORMAL at position [50, 248]
+Episode: 402/500, Score: 0, Reward: -5.57, Epsilon: 0.02
+Generated fruit: NORMAL at position [460, 258]
+Episode: 403/500, Score: 0, Reward: -3.38, Epsilon: 0.02
+Generated fruit: NORMAL at position [130, 48]
+Episode: 404/500, Score: 0, Reward: -2.67, Epsilon: 0.02
+Generated fruit: NORMAL at position [560, 68]
+Episode: 405/500, Score: 0, Reward: -6.73, Epsilon: 0.02
+Generated fruit: NORMAL at position [490, 68]
+Episode: 406/500, Score: 0, Reward: -6.64, Epsilon: 0.02
+Updated target model at episode 406
+Generated fruit: NORMAL at position [270, 348]
+Episode: 407/500, Score: 0, Reward: 9.50, Epsilon: 0.02
+Generated fruit: NORMAL at position [80, 238]
+Episode: 408/500, Score: 0, Reward: -7.44, Epsilon: 0.02
+Generated fruit: NORMAL at position [490, 348]
+Episode: 409/500, Score: 0, Reward: -10.00, Epsilon: 0.02
+Generated fruit: SPECIAL at position [160, 388]
+Episode: 410/500, Score: 0, Reward: -7.10, Epsilon: 0.02
+Generated fruit: NORMAL at position [170, 68]
+Episode: 411/500, Score: 0, Reward: -7.63, Epsilon: 0.02
+Updated target model at episode 411
+Generated fruit: NORMAL at position [240, 278]
+Episode: 412/500, Score: 0, Reward: -9.01, Epsilon: 0.02
+Generated fruit: SPECIAL at position [270, 128]
+Episode: 413/500, Score: 0, Reward: -8.21, Epsilon: 0.02
+Generated fruit: NORMAL at position [220, 208]
+Episode: 414/500, Score: 0, Reward: -8.53, Epsilon: 0.02
+Generated fruit: SPECIAL at position [430, 88]
+Episode: 415/500, Score: 0, Reward: -8.78, Epsilon: 0.02
+Generated fruit: NORMAL at position [500, 248]
+Generated fruit: NORMAL at position [330, 378]
+Episode: 416/500, Score: 1, Reward: -1.40, Epsilon: 0.02
+Updated target model at episode 416
+Generated fruit: NORMAL at position [560, 68]
+Episode: 417/500, Score: 0, Reward: -7.37, Epsilon: 0.02
+Generated fruit: NORMAL at position [140, 68]
+Episode: 418/500, Score: 0, Reward: -8.80, Epsilon: 0.02
+Generated fruit: NORMAL at position [460, 48]
+Episode: 419/500, Score: 0, Reward: -6.86, Epsilon: 0.02
+Generated fruit: NORMAL at position [160, 268]
+Episode: 420/500, Score: 0, Reward: 9.17, Epsilon: 0.02
+Generated fruit: NORMAL at position [430, 298]
+Generated fruit: SPECIAL at position [90, 348]
+Episode: 421/500, Score: 1, Reward: 1.80, Epsilon: 0.02
+Updated target model at episode 421
+Generated fruit: NORMAL at position [220, 338]
+Episode: 422/500, Score: 0, Reward: -7.00, Epsilon: 0.02
+Generated fruit: NORMAL at position [490, 328]
+Episode: 423/500, Score: 0, Reward: 2.90, Epsilon: 0.02
+Generated fruit: NORMAL at position [180, 108]
+Episode: 424/500, Score: 0, Reward: -3.44, Epsilon: 0.02
+Generated fruit: NORMAL at position [540, 78]
+Episode: 425/500, Score: 0, Reward: -7.38, Epsilon: 0.02
+Generated fruit: NORMAL at position [60, 108]
+Episode: 426/500, Score: 0, Reward: -10.13, Epsilon: 0.02
+Updated target model at episode 426
+Generated fruit: SPECIAL at position [420, 228]
+Episode: 427/500, Score: 0, Reward: -8.28, Epsilon: 0.02
+Generated fruit: NORMAL at position [530, 38]
+Episode: 428/500, Score: 0, Reward: -7.63, Epsilon: 0.02
+Generated fruit: NORMAL at position [100, 128]
+Episode: 429/500, Score: 0, Reward: -0.96, Epsilon: 0.02
+Generated fruit: NORMAL at position [570, 98]
+Episode: 430/500, Score: 0, Reward: -6.88, Epsilon: 0.02
+Generated fruit: NORMAL at position [260, 78]
+Episode: 431/500, Score: 0, Reward: -10.43, Epsilon: 0.02
+Updated target model at episode 431
+Generated fruit: NORMAL at position [530, 318]
+Generated fruit: NORMAL at position [570, 148]
+Episode: 432/500, Score: 1, Reward: -0.63, Epsilon: 0.02
+Generated fruit: NORMAL at position [210, 358]
+Episode: 433/500, Score: 0, Reward: 0.53, Epsilon: 0.02
+Generated fruit: NORMAL at position [250, 198]
+Episode: 434/500, Score: 0, Reward: -9.79, Epsilon: 0.02
+Generated fruit: NORMAL at position [250, 208]
+Episode: 435/500, Score: 0, Reward: -9.80, Epsilon: 0.02
+Generated fruit: NORMAL at position [220, 258]
+Episode: 436/500, Score: 0, Reward: -8.68, Epsilon: 0.02
+Updated target model at episode 436
+Generated fruit: NORMAL at position [130, 128]
+Episode: 437/500, Score: 0, Reward: -10.30, Epsilon: 0.02
+Generated fruit: SPECIAL at position [450, 258]
+Generated fruit: NORMAL at position [260, 388]
+Generated fruit: NORMAL at position [250, 38]
+Episode: 438/500, Score: 1, Reward: 1.53, Epsilon: 0.02
+Generated fruit: NORMAL at position [450, 208]
+Generated fruit: NORMAL at position [490, 198]
+Episode: 439/500, Score: 1, Reward: -2.80, Epsilon: 0.02
+Generated fruit: NORMAL at position [560, 278]
+Generated fruit: NORMAL at position [130, 358]
+Episode: 440/500, Score: 1, Reward: 4.12, Epsilon: 0.01
+Generated fruit: NORMAL at position [510, 38]
+Episode: 441/500, Score: 0, Reward: -7.78, Epsilon: 0.01
+Updated target model at episode 441
+Generated fruit: NORMAL at position [550, 38]
+Episode: 442/500, Score: 0, Reward: -7.11, Epsilon: 0.01
+Generated fruit: NORMAL at position [430, 218]
+Generated fruit: NORMAL at position [170, 318]
+Episode: 443/500, Score: 1, Reward: 0.60, Epsilon: 0.01
+Generated fruit: NORMAL at position [490, 198]
+Generated fruit: NORMAL at position [0, 178]
+Episode: 444/500, Score: 1, Reward: -2.11, Epsilon: 0.01
+Generated fruit: NORMAL at position [440, 388]
+Generated fruit: NORMAL at position [90, 378]
+Generated fruit: NORMAL at position [520, 258]
+Episode: 445/500, Score: 2, Reward: 11.65, Epsilon: 0.01
+Generated fruit: NORMAL at position [500, 78]
+Episode: 446/500, Score: 0, Reward: 9.39, Epsilon: 0.01
+Updated target model at episode 446
+Generated fruit: NORMAL at position [220, 298]
+Generated fruit: NORMAL at position [540, 238]
+Episode: 447/500, Score: 1, Reward: 2.37, Epsilon: 0.01
+Generated fruit: NORMAL at position [470, 388]
+Generated fruit: NORMAL at position [510, 58]
+Episode: 448/500, Score: 1, Reward: -0.58, Epsilon: 0.01
+Generated fruit: NORMAL at position [100, 278]
+Episode: 449/500, Score: 0, Reward: -8.73, Epsilon: 0.01
+Generated fruit: NORMAL at position [280, 278]
+Episode: 450/500, Score: 0, Reward: -10.30, Epsilon: 0.01
+Generated fruit: GOLDEN at position [480, 98]
+Episode: 451/500, Score: 0, Reward: -6.18, Epsilon: 0.01
+Updated target model at episode 451
+Generated fruit: NORMAL at position [50, 298]
+Episode: 452/500, Score: 0, Reward: 8.51, Epsilon: 0.01
+Generated fruit: NORMAL at position [230, 268]
+Episode: 453/500, Score: 0, Reward: -10.30, Epsilon: 0.01
+Generated fruit: NORMAL at position [30, 128]
+Episode: 454/500, Score: 0, Reward: -4.26, Epsilon: 0.01
+Generated fruit: NORMAL at position [60, 158]
+Episode: 455/500, Score: 0, Reward: 0.10, Epsilon: 0.01
+Generated fruit: NORMAL at position [520, 358]
+Episode: 456/500, Score: 0, Reward: -6.08, Epsilon: 0.01
+Updated target model at episode 456
+Generated fruit: NORMAL at position [210, 128]
+Episode: 457/500, Score: 0, Reward: -10.39, Epsilon: 0.01
+Generated fruit: NORMAL at position [270, 218]
+Episode: 458/500, Score: 0, Reward: -9.64, Epsilon: 0.01
+Generated fruit: SPECIAL at position [0, 208]
+Episode: 459/500, Score: 0, Reward: -5.87, Epsilon: 0.01
+Generated fruit: SPECIAL at position [380, 138]
+Episode: 460/500, Score: 0, Reward: -9.52, Epsilon: 0.01
+Generated fruit: NORMAL at position [240, 48]
+Episode: 461/500, Score: 0, Reward: -4.47, Epsilon: 0.01
+Updated target model at episode 461
+Generated fruit: NORMAL at position [60, 38]
+Episode: 462/500, Score: 0, Reward: 6.53, Epsilon: 0.01
+Generated fruit: NORMAL at position [230, 108]
+Episode: 463/500, Score: 0, Reward: 7.08, Epsilon: 0.01
+Generated fruit: SPECIAL at position [570, 48]
+Episode: 464/500, Score: 0, Reward: -6.22, Epsilon: 0.01
+Generated fruit: NORMAL at position [520, 318]
+Generated fruit: NORMAL at position [420, 148]
+Episode: 465/500, Score: 1, Reward: -1.33, Epsilon: 0.01
+Generated fruit: SPECIAL at position [320, 328]
+Generated fruit: NORMAL at position [400, 288]
+Episode: 466/500, Score: 0, Reward: -7.43, Epsilon: 0.01
+Updated target model at episode 466
+Generated fruit: SPECIAL at position [370, 228]
+Generated fruit: NORMAL at position [40, 78]
+Episode: 467/500, Score: 0, Reward: -4.95, Epsilon: 0.01
+Generated fruit: NORMAL at position [560, 248]
+Generated fruit: SPECIAL at position [340, 218]
+Episode: 468/500, Score: 1, Reward: 0.76, Epsilon: 0.01
+Generated fruit: NORMAL at position [540, 228]
+Generated fruit: NORMAL at position [410, 368]
+Episode: 469/500, Score: 1, Reward: -0.44, Epsilon: 0.01
+Generated fruit: NORMAL at position [340, 38]
+Episode: 470/500, Score: 0, Reward: -6.69, Epsilon: 0.01
+Generated fruit: SPECIAL at position [450, 98]
+Episode: 471/500, Score: 0, Reward: 9.17, Epsilon: 0.01
+Updated target model at episode 471
+Generated fruit: NORMAL at position [420, 128]
+Episode: 472/500, Score: 0, Reward: -9.50, Epsilon: 0.01
+Generated fruit: NORMAL at position [100, 288]
+Generated fruit: SPECIAL at position [240, 158]
+Episode: 473/500, Score: 1, Reward: 0.97, Epsilon: 0.01
+Generated fruit: NORMAL at position [370, 88]
+Episode: 474/500, Score: 0, Reward: -9.56, Epsilon: 0.01
+Generated fruit: NORMAL at position [330, 188]
+Generated fruit: NORMAL at position [150, 138]
+Episode: 475/500, Score: 1, Reward: -4.65, Epsilon: 0.01
+Generated fruit: NORMAL at position [140, 328]
+Episode: 476/500, Score: 0, Reward: -4.68, Epsilon: 0.01
+Updated target model at episode 476
+Generated fruit: NORMAL at position [570, 238]
+Episode: 477/500, Score: 0, Reward: -8.40, Epsilon: 0.01
+Generated fruit: NORMAL at position [310, 208]
+Generated fruit: NORMAL at position [510, 188]
+Episode: 478/500, Score: 1, Reward: -2.56, Epsilon: 0.01
+Generated fruit: GOLDEN at position [80, 48]
+Episode: 479/500, Score: 0, Reward: -6.74, Epsilon: 0.01
+Generated fruit: NORMAL at position [100, 328]
+Episode: 480/500, Score: 0, Reward: -8.30, Epsilon: 0.01
+Generated fruit: NORMAL at position [500, 298]
+Generated fruit: NORMAL at position [490, 98]
+Episode: 481/500, Score: 1, Reward: -1.77, Epsilon: 0.01
+Updated target model at episode 481
+Generated fruit: NORMAL at position [320, 68]
+Episode: 482/500, Score: 0, Reward: -6.37, Epsilon: 0.01
+Generated fruit: NORMAL at position [90, 98]
+Episode: 483/500, Score: 0, Reward: -7.20, Epsilon: 0.01
+Generated fruit: NORMAL at position [520, 68]
+Episode: 484/500, Score: 0, Reward: -4.71, Epsilon: 0.01
+Generated fruit: NORMAL at position [260, 288]
+Episode: 485/500, Score: 0, Reward: 2.40, Epsilon: 0.01
+Generated fruit: NORMAL at position [550, 358]
+Episode: 486/500, Score: 0, Reward: 10.82, Epsilon: 0.01
+Updated target model at episode 486
+Generated fruit: NORMAL at position [290, 208]
+Episode: 487/500, Score: 0, Reward: -9.71, Epsilon: 0.01
+Generated fruit: SPECIAL at position [500, 378]
+Generated fruit: NORMAL at position [360, 128]
+Episode: 488/500, Score: 0, Reward: -5.53, Epsilon: 0.01
+Generated fruit: NORMAL at position [450, 168]
+Generated fruit: NORMAL at position [360, 138]
+Episode: 489/500, Score: 1, Reward: -3.75, Epsilon: 0.01
+Generated fruit: SPECIAL at position [150, 208]
+Episode: 490/500, Score: 0, Reward: -2.99, Epsilon: 0.01
+Generated fruit: NORMAL at position [340, 218]
+Generated fruit: NORMAL at position [260, 278]
+Episode: 491/500, Score: 1, Reward: -2.46, Epsilon: 0.01
+Updated target model at episode 491
+Generated fruit: NORMAL at position [80, 128]
+Episode: 492/500, Score: 0, Reward: -7.48, Epsilon: 0.01
+Generated fruit: SPECIAL at position [280, 388]
+Generated fruit: NORMAL at position [80, 118]
+Episode: 493/500, Score: 0, Reward: -6.33, Epsilon: 0.01
+Generated fruit: NORMAL at position [410, 118]
+Episode: 494/500, Score: 0, Reward: 6.31, Epsilon: 0.01
+Generated fruit: NORMAL at position [170, 188]
+Episode: 495/500, Score: 0, Reward: -7.91, Epsilon: 0.01
+Generated fruit: NORMAL at position [50, 288]
+Episode: 496/500, Score: 0, Reward: 10.05, Epsilon: 0.01
+Updated target model at episode 496
+Generated fruit: NORMAL at position [80, 138]
+Episode: 497/500, Score: 0, Reward: -7.57, Epsilon: 0.01
+Generated fruit: NORMAL at position [20, 188]
+Episode: 498/500, Score: 0, Reward: -9.73, Epsilon: 0.01
+Generated fruit: NORMAL at position [330, 238]
+Generated fruit: NORMAL at position [0, 168]
+Episode: 499/500, Score: 1, Reward: -4.04, Epsilon: 0.01
+Generated fruit: NORMAL at position [110, 288]
+Episode: 500/500, Score: 0, Reward: -6.26, Epsilon: 0.01
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.

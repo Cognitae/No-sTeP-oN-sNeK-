@@ -209,6 +209,8 @@ def game_loop():
                         watch_ai_play()
                     except ImportError:
                         print("AI module not found. Please run 'pip install tensorflow' and train the AI first.")
+                    except FileNotFoundError:
+                        print("AI model file 'snake_ai_model.h5' not found. Train the AI first by running 'snake_ai.py'.")
                     except Exception as e:
                         print(f"Error launching AI: {e}")
 
