@@ -329,8 +329,13 @@ def train_snake_ai(episodes=10000, batch_size=64, render_every=100):
             agent.update_target_model()
             print(f"Updated target model at episode {e+1}")
     
+        # Save model checkpoints
+        if e % 1000 == 0:
+            agent.model.save(f'snake_ai_model_grinder_checkpoint_{e}.keras')  # Save in .keras format
+            print(f"Checkpoint saved at episode {e}")
+    
     # Save the trained model
-    agent.model.save('snake_ai_model.h5')
+    agent.model.save('snake_ai_model_grinder.keras')  # Save in .keras format
     
     # Plot learning curve
     plt.figure(figsize=(10, 6))
@@ -345,13 +350,13 @@ def train_snake_ai(episodes=10000, batch_size=64, render_every=100):
     
     return agent
 
-def watch_ai_play(model_path='snake_ai_model.h5', games=5):
+def watch_ai_play(model_path='snake_ai_model_grinder.keras', games=5):  # Updated default model path
     """Watch the trained AI play Snake"""
     if not os.path.exists(model_path):
         print(f"Error: Model file '{model_path}' not found. Please train the AI first by running the script.")
         return
 
-    model = keras.models.load_model(model_path)
+    model = keras.models.load_model(model_path)  # Load the model in .keras format
     env = SnakeGameEnv(render=True)
     state_size = 13
 

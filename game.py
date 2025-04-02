@@ -206,11 +206,11 @@ def game_loop():
                 if event.key == pygame.K_a and not game_started:  # New key handler for AI
                     try:
                         from snake_ai import watch_ai_play
-                        watch_ai_play()
+                        watch_ai_play(model_path='snake_ai_model_grinder.keras')  # Updated model path to .keras
                     except ImportError:
                         print("AI module not found. Please run 'pip install tensorflow' and train the AI first.")
                     except FileNotFoundError:
-                        print("AI model file 'snake_ai_model.h5' not found. Train the AI first by running 'snake_ai.py'.")
+                        print("AI model file 'snake_ai_model_grinder.keras' not found. Train the AI first by running 'snake_ai.py'.")
                     except Exception as e:
                         print(f"Error launching AI: {e}")
 
